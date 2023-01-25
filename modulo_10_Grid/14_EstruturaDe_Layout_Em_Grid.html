@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container e Item</title>
+    <style>
+        /*auto-fill = ele cria colunas vazias para se adaptar ao elemento criado do grid.
+        auto-fit = ele cria colunas de acordo com o tamanho do elemento criado do grid , e fica
+        bem mais interessante na responsividade do site.*/
+        .container{
+            display: grid;
+            gap: 10px;
+            background-color: #ccc;
+            align-content: center; 
+
+            grid-template-areas:
+            "header header header header header header header header"
+            "menu menu content content content content content content"
+            "ad ad content content content content content content"
+            "footer footer footer footer footer footer footer footer";
+
+
+                
+        }
+        .Item{
+            border-radius: 10px;
+            background-color:blue;
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        header{grid-area: header;}
+        nav{grid-area:menu;}
+        section{grid-area: content;}
+        footer{grid-area: footer;}
+        .ad{grid-area: ad;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="Item Item1">Cabeçalho</header>
+        <nav class="Item Item2">Menu</nav>
+        <section class="Item Item3">Conteúdo: </br>
+            Colocando mais conteúdo, para que o conteudo fique maior
+        </br>
+            Colocando mais conteúdo, para que o conteudo fique maior
+        </br>
+        Colocando mais conteúdo, para que o conteudo fique maior
+        </br>
+        Colocando mais conteúdo, para que o conteudo fique maior
+        </br>
+        Colocando mais conteúdo, para que o conteudo fique maior
+        </br>
+        Colocando mais conteúdo, para que o conteudo fique maior
+        </section>
+        <footer class="Item Item4">Rodapé</footer>
+        <div class="Item ad">Anúncio</div>
+       
+    </div>
+</body>
+</html>

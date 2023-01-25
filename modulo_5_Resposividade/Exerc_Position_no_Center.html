@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Centered</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Jetbrains Mono', monospace;
+            }
+            .box {
+                border-radius: 5px; /*faz uma dobra nos verticies*/
+                color: rgb(51, 34, 5);
+                font-weight: bold;
+            }
+            .parent {
+                position: relative; /*consegue mudar a profundidade ex: deixar um acima do outro,
+                trocar o item*/
+                width: 30rem;
+                height: 30rem;
+                background: #3bf;
+            }
+            /*.centered {
+                position: absolute; /*o absolute procura o relative mais próximo na hierarquia para 
+                usar como referência na hora de posicionar*/
+                /*  top: calc(50%-(15rem/2)); O top e o left moviemntam o elemento a partir 
+                das bordas, ou seja, como ele é relativo ao .parent, ele vai começar da borda de cima
+                e vai mover 50%, e vai começar da borda esquerda e vai mover 50%, só que isso nos causa
+                um problema, já que o elemento é movimentado a partir das suas bordas e não a partir de
+                seu centro, logo o que é centralizado na verdade é o vértice superior esquerdo e não 
+                o elemento todo, ai pra resolver isso ai pegamos as medidas de altura e largura, 
+                dividimos por 2, ai subtraimos dos 50% pq ai vai voltar certinho pro meio do elemento. 
+                left: calc(50%-(15rem/2));
+                width: 15rem;
+                height: 15rem;
+                background: #fb3;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            } */
+            /* uma maneira de fazer sem  os calc é usando transform, pois aqui podemos mover o
+             elemento semelhante ao position: relative; (ou seja em relação a ele mesmo) e podemos 
+             escolher o ponto que vai começar a mover, pode ser pelas bordas como no position, mas
+             o que queremos aqui é pelo meio não é mesmo? Isso é bom pois mover pelo meio já é o
+             valor padrão do transform, entendida a teoria bora ver o resultado final: */
+             .centered{
+                 position: absolute;
+                 top: 50%;
+                 left: 50%;
+                 transform: translate(-50%,-50%); /*com o transform, que aqui as % são relativas ao elemento
+                  e não ao .parent*/
+                 background: #fb3;
+                 width: 15rem;
+                 height: 15rem;
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: center;
+                 align-items: center;
+             }
+        </style>
+    </head>
+    <body>
+        <div class="box parent">
+            <div class="box centered">I'm centered!!!</div>
+        </div>
+    </body>
+</html>

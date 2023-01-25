@@ -1,0 +1,13 @@
+img{
+    width:2560px;
+    height:1080px;
+    object-fit: cover; 
+    /*object-fit:scale-down reduz a imagem propocionamente e a qualiadade 
+    da imagem com o tamanho. Bem parecido com o conteiner*/
+    /*object-fit:none corta mais a imagem, sem distorcer*/
+    /* object-fit: cover; ajusta o tamanho da imagem e corta a imagem para não distorcer sua 
+     qualidade. É o mais utilizado.*/
+    /*object-fit: contain;  contein deixa na proporção original, mas reduz a imagem 
+    para ficar propocional a largura e altura que foi administrada sem ser destorcida*/
+    /*object-fit: fill; fill deixa na propriedade padrao*/
+}

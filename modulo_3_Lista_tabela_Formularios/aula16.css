@@ -1,0 +1,43 @@
+*{ box-sizing: border-box;}
+.form-cente{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{ display: inline-block;} /*display: inline-flex; coloca um do lado do outro*/
+
+fieldset{
+    background-color: rgba(212, 230, 231, 0.911);
+    margin-bottom: 25px;
+    border: 2px solid blue;
+    border-radius: 5px; /* deixa a borda arredondada*/
+   
+    text-align: center;
+
+}
+.label{
+  left: auto;
+  margin-bottom: 5px;
+}
+legend{
+    background-color: blue;
+    color: white;
+    padding: 3px;
+    display: block;
+    text-align:center;
+    border-radius: 5px;
+}
+input{
+    text-align:center;
+    margin-bottom: 5px;
+}
+#botao{
+    text-align: center;
+}
+.enviar{
+    color: white;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 5px;
+}

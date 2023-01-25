@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Rubik:ital,wght@1,500&family=Lato&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+            body{
+                margin:0px;
+            }
+            header{
+                width:100%;
+                height:530px;
+                background: url("../Imagens/bannerImobiliaria.svg");
+                background-repeat:no-repeat;
+                background-size: cover;
+            }
+            .divaux,.divbanner{
+                width: 400px;
+                height: 440px;
+                margin:100px;
+                margin-top:25px;
+                float:right;
+                border-radius:25px;
+                border-top-left-radius: 70px;  
+                box-sizing:border-box;
+            }
+            .divaux{
+                margin:0;
+                width: 395px;
+                height: 438px;  
+                opacity:33%;
+                background-color: white;
+            }
+            .divbanner{
+                border:solid 3px honeydew;
+                border-bottom-width: 1px;
+                border-right-width: 1px;
+                box-shadow: inset 1px 1px 1px white;
+            }
+            .logobanner{
+                width:80px;
+                height: 55px;
+                position: absolute;
+                padding-left:150px;
+                line-height: 150px;
+                opacity: 100%;
+            }
+            .divbanner > p{
+                position:absolute;
+                margin:80px;
+                font-size:17px;
+                font-weight: bold;
+                color:rgba(0,0,0,0.7);  
+            }
+            .divbanner > span{
+                position:absolute;
+                margin:100px;
+                margin-left: 5%;
+                font-size: 29px;
+                color:#035aa6;
+            }
+            .divbanner > spanLorem{
+                position: absolute;
+                margin-top:250px;
+                margin-right:5%;
+                font-size:17px;
+                opacity: 51%;
+            }
+            .divbanner > p, span, spanLorem{
+                font-family: 'Roboto', sans-serif;
+                margin-left:5%;
+            }
+            .divbanner > button{
+                position:absolute;
+                margin-top:320px;
+                margin-left:5%;
+                width:13%;
+                height:5%;
+                font-family: 'Rubik', sans-serif;
+                font-size:17px;
+                color:#fff;
+                background-color:#035aa6;
+                line-height: 120%;
+                border:none;
+                box-shadow: 2px 2px 2px #534f4f ;
+            }
+            /*-------------------------------------------------------------*/
+            section{
+                width:100% ;
+                height:332px ;
+                background-color:#fff;
+            }
+            .economic > .imagem,img, .confort> .imagem,img{
+                width: 200px;
+                height: 200px;
+                
+            }
+            .imagem, .text{
+                position: absolute;
+                box-sizing: border-box;
+            }
+            .economic > .imagem{
+                margin-left: 250px;
+                margin-top: 80px;
+            }
+            .economic > .text{
+                margin-left: 700px;
+                margin-top:30px; 
+            }
+            .text > p{
+                margin-top: 0;
+                font-size:28px;
+                font-family:'Roboto', sans-serif;
+                color:#030303;
+                line-height: 123%;
+                letter-spacing: 5%;
+            }
+            .text > spanLorem{
+                display:block;
+                font-size: 17px;
+                font-family: 'Lato', sans-serif;
+                color:#94999e;
+                line-height: 135%;
+                letter-spacing: 2%;
+            }
+            .text > a{
+                color:#7aa7d4;
+            }
+            .text >a >p{
+                margin-bottom: 0px;
+                font-size: 17px;
+                font-family: 'Roboto',sans-serif;
+                line-height: 120%;
+                letter-spacing: 1%;
+                font-style: italic;
+            }
+
+            .confort > .text{
+                margin-top:30px;
+                margin-left:250px;
+            }
+            .confort > .imagem{
+                margin-top: 50px;
+                margin-left: 700px;
+            }
+
+            .topics{
+                text-align: center;
+                display: flex;
+                justify-content: space-around;
+                height: 400px;
+            }
+            .icones{
+                display: inline;
+            }
+            .icones > .icon{
+                width: 83px;
+                height: 82px;
+                margin-top: 59px;
+            }
+            .icones > p{
+                font-size: 23px;
+                line-height: 120%;
+                letter-spacing: 5%;
+                font-family: 'Roboto',sans-serif;
+                color:#030405;
+            }
+            .icones > span{
+                font-size: 17px;
+                color:#94999e;
+                line-height: 135%;
+                letter-spacing: 2%;
+            }
+            footer{
+                width: 100%;
+                height:85px;
+                background-color: #c8d0d6;
+            }
+            .redes{
+                margin-left:150px;
+                width: fit-content;
+                box-sizing:border-box;
+            }
+            .rede{
+                width:36px;
+                height: 29px;
+                margin-top:29px;
+            }
+            footer > .logo {
+                position: absolute;
+                width:218px;
+                height:123px;
+                margin-left: 78%;
+                margin-top: -3%;
+                box-sizing: border-box;
+            } 
+            @media only screen and (min-width:320px) and (max-width:767px){
+                header{
+                    height: 667px;
+                }
+                .divaux,.divbanner{
+                    position:absolute;
+                    width: 95%;
+                    height: 440px;
+                    margin-left:2%;
+                    margin-right:2%;
+                    margin-top:30%;
+                    border-radius:25px;
+                    border-top-left-radius: 70px;  
+                    box-sizing:border-box;
+                }
+                .divaux{
+                    margin:0;
+                    width: 100%;
+                    height: 438px;  
+                    opacity:33%;
+                    background-color: white;
+                }
+                .divbanner{
+                    border:solid 3px honeydew;
+                    border-bottom-width: 1px;
+                    border-right-width: 1px;
+                    box-shadow: inset 1px 1px 1px white;
+                }
+                .logobanner{
+                    width: 29%;
+                    height:16%;
+                    padding-left: 40%;
+                    padding-top:1%;
+                }
+                .divbanner > button {
+                    width:43%;
+                    height:10%;
+                }
+                /* -------------------- ECONOMIC -----------------*/
+                .imagem > img{
+                    width: 146px;
+                    height:146px;
+                }
+                .economic > .imagem{
+                    margin-left:25%;
+                    margin-top:5%;
+                
+                }
+                .economic > .text {
+                    margin-left: 10%;
+                    margin-top: 50%;
+                }
+                .text > spanLorem{
+                margin-left: 0;
+            }
+            .confort{
+                margin-top: 30%;
+            }
+            .confort > .text{
+                margin-top:60%;
+                margin-left:25%;
+            }
+            .confort > .imagem{
+                margin-left:25%;
+            }
+            .confort > .text{
+                margin-left: 13%;
+            }
+            .topics > .icones > span{
+                display: block;
+            }
+            .topics{
+                display:block;
+                margin-top: 30%;
+            }
+            .topics .icon{
+                width:100px;
+                height:100px;
+            }
+            footer{
+                margin-top: 210%;
+            }
+            footer > .logo{
+                width:137px;
+                height: 84px;
+                margin-left: 56%; 
+            } 
+            footer > .redes{
+                margin-left: 2%;
+            }
+            footer > .redes > .rede{
+                width:25px;
+                height:25px;
+            }
+            }
+            @media only screen and (min-width:360px) and (max-width:380px){
+                .divbanner > spanLorem{
+                    font-size: 17px;
+                    margin-top:66%;
+                }  
+            }
+            @media only screen and (min-width:381px) and (max-width:410px){
+                .divbanner > spanLorem{
+                    margin-top:66%;
+                }
+            
+            }
+    </style>
+</head>
+<body>
+    <body>
+        <header>
+            <div class="divbanner">
+                <div class="divaux"></div>
+                <img class="logobanner" src="../Imagens/imove.svg">
+                <p>Consultora</p>
+                <span>Os melhores <br> imóveis estão <br> aqui!</span>
+                <spanLorem> Lorem ipsum dolor sit amet, consectetur adipiscingspan adipiscingspan</spanLorem>
+                <button>Ler mais</button>
+            </div>    
+        </header>
+          <section class="economic">
+            <div class=imagem>
+                <img src="../Icones/finance.svg" alt="">
+            </div>
+            <div class="text">
+                <p>Os melhores preços<br>do mercado</p>
+                <spanLorem>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,sed do<br> eiusmod tempor incididunt ut labore et<br> dolore magna aliqua. Ut enim ad <br>minim veniam, quis nostrud <br>exercitation ullamco laboris</spanLorem>
+                <a href="#"><p>mais</p></a>
+            </div>
+        </section> 
+         <section class="confort">
+            <div class="text">
+                <p>Mais conforto</p>
+                <spanLorem>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,sed do<br> eiusmod tempor incididunt ut labore et<br> dolore magna aliqua. Ut enim ad <br>minim veniam, quis nostrud <br>exercitation ullamco laboris</spanLorem>
+                <a href="#"><p>mais</p></a>
+            </div>
+            <div class=imagem>
+                <img src="../Icones/house.svg" alt="">
+            </div>
+        </section>
+        <section class="topics">
+            <div class="icones">
+                <img src="../Icones/serviços.svg" alt="" class="icon">
+                <p>Serviços</p>
+                <span>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit,<br> sed do eiusmod tempor<br> incididunt ut labore et<br> dolore magna aliqua.</span>
+            </div>
+    
+             <div class="icones">
+                <img src="../Icones/maisp.svg" alt="" class="icon seg">
+                <p>Mais procuradas</p>
+                <span>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit,<br> sed do eiusmod tempor<br> incididunt ut labore et<br> dolore magna aliqua.</span>
+            </div>
+            
+            <div class="icones">
+                <img src="../Icones/rec.svg" alt="" class="icon">
+                <p>Recomendações</p>
+                <span>Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit,<br> sed do eiusmod tempor<br> incididunt ut labore et<br> dolore magna aliqua.</span>
+            </div> 
+        </section>
+        <footer>
+             <img src="../Icones/imove.svg" class="logo">
+            
+            <div class="redes">
+                <img src="../Icones/tt.svg" alt="" class="rede">
+                <img src="../Icones/insta.svg" alt="" class="rede">
+                <img src="../Icones/fb.svg" alt="" class="rede">
+            </div>
+            
+        </footer>  
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <style>
+        /* caso queire uma div do tamanho do texto basta aplica 
+        div{ width: 25%; min-height: 100%;}*/
+        *{
+            Padding: 0;
+            Margin: 0;
+            }
+        h1{margin: 0;}
+        body{background-color: black; margin: 0;}
+        p{padding: 10px; text-align: justify; line-height: 2.5ch; color: #000;}
+        
+        .site{ width: 100%; max-width:900px; margin: 0 auto; background-color:white; color: black;}
+      
+        .topo{ width: 100%; height: 80px; line-height: 80px; background-color: orange; text-align: center;}
+        
+        .menu{ width: 25%; height: 800px; float: left; text-align: center;background-color: rgb(17, 10, 20); color: white;}
+        
+        .menu ul, .menu li{margin: 0; padding: 0;}
+        
+        .menu li{ list-style: none; height: 25px; line-height: 25px; border-bottom: 1px solid#ccc; padding-left: 1px;}
+        
+        .menu_Mobile{ margin:0 auto; width:150px; height: 150px; line-height: 80px; display: none; }
+
+        .center{ width: 50%; float: left; text-align: center;}
+      
+        img{ width: 80%; height: 50%; }
+
+        .rightside{ width: 25%; height: 800px; float: right; background-color: rgb(17, 10, 20); }
+
+        .rodape{clear: both; height: 80px; background-color: orange; position: relative; bottom:0;}
+        
+        /*A propriedade clear, quando acompanhada do valor both,
+         impede que elementos flutuem de ambos os lados*/
+         @media only screen and (min-width: 500px) and (max-width: 701px){
+            .center{width: 75%; color:white;}
+            .rightside{width: 100%; height: 200px; position: absolute;  bottom: 0;}
+            
+            img{ width: 50%; height: auto; }
+           
+         }
+         @media only screen and (max-width: 500px) {
+            
+            .menu_Mobile {display: block;}
+            .menu ul{display: none;}
+            .center{width: 100%;}
+            .menu{ width: 100%; height: 80px; }
+            .rightside{ width: 100%; height: 80px;}
+            img{ width: 50%; height: auto; }
+         
+         }
+    </style>
+</head>
+<body>
+    <div class="site"> 
+        <div class="topo"> <h1>Guia Turístico</h1></div>
+        
+        <div class="menu"> 
+            <div class="menu_Mobile">
+                <img src="menu.png" width="30" />
+            </div>
+            <ul>
+                <li> Item 1</li>
+                <li> Item 2</li>
+                <li> Item 3</li>
+            </ul>
+        </div>
+        
+        <div class="center"> 
+            <h2> O Titulo</h2>
+            <p class="teste">Lorem ipsum dolor sit amet consectetur, adipiscing elit scelerisque posuere dictumst in, congue volutpat sem fringilla. Tempus ipsum laoreet leo augue porta vivamus quis proin suspendisse, libero vestibulum lectus blandit lacinia justo risus nam. Nostra leo litora id a tellus finibus ut molestie nisl, eu erat fames mollis dui viverra porta. Ridiculus vehicula ultrices auctor ante quam faucibus sem aptent justo, cras class rhoncus condimentum hac netus arcu posuere, odio purus cubilia finibus dui ornare potenti nullam. Hendrerit mollis cubilia lobortis velit penatibus finibus nisl tristique eleifend consequat conubia magna quis, fermentum primis torquent est lacinia tempor arcu vestibulum lacus tellus quam. Arcu magna sagittis dis dictumst massa consequat ridiculus primis maecenas, eleifend purus augue vehicula netus feugiat tortor nullam eros, in nibh faucibus quisque mattis torquent consectetur luctus. Quam phasellus nostra morbi nisl est ridiculus, enim platea magnis iaculis fusce mus erat, posuere consequat commodo vivamus sollicitudin. Egestas tristique malesuada feugiat nunc fermentum per accumsan habitasse, ligula mollis sed nulla dolor aenean vivamus eget, nascetur a purus tempus fames lacinia scelerisque
+            </p> 
+                <img src="modern-futuristic-sci-fi-background.jpg" alt=""/>
+        </div>
+
+        <div class="rightside"> </div>
+
+        <div class="rodape"> </div>
+    </div>
+</body>
+</html>

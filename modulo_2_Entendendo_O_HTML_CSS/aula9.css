@@ -1,0 +1,21 @@
+body {
+    margin:0px;
+}
+
+/* .exemplo { /* width: 700px; */
+ /*   border:10px solid #f22;
+    padding:10px;
+    margin:px } */
+
+    
+/* .exemplo { /* width: 700px; */
+/*      border:10px solid #f22;
+        padding-left:10px;
+        padding-top:50px; 
+    } */ 
+
+.exemplo { /* width: 700px; */
+    border:1px solid #f22;
+   /* padding: 10px 50px 10px 50px; /* formato retangular */
+    padding: 10px 50px  /* formato quadrado */
+} 

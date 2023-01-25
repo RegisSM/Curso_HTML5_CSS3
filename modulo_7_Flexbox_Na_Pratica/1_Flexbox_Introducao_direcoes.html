@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  /*  div{
+        width:50%;
+        height: 200px;
+        background-color: #FF0000;
+        margin: 10px;
+        float:left;  /*faz uma coluna virar em linha 
+    } */
+    .container{
+        
+        background-color: #Ddd;
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+    }
+    .div1{
+        flex: 1;
+        background-color: #FF0000;
+        margin: 10px;
+        padding: 10px;
+        font-size: 18px;
+    }
+    .div2{
+        flex: 1;
+        background-color: #FF0000;
+        margin: 10px;
+        padding: 10px;
+        font-size: 18px;
+    }
+    .div3{
+        flex: 1;
+        background-color: #FF0000;
+        margin: 10px;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+    </div>
+
+    <pre> 
+Olha o float foi a primeira propriedade pensada para layoutar o site,
+porém ele serve para layoutar um site de maneira parecida com uma 
+revista/jornal, tanto é que não é possível centralizar nada usando 
+float (tem técnicas pra isso se for na horizontal, mas ai vc já tá 
+sujando o HTML do site com divs desnecessárias, agora na vertical só da pra 
+sentar e chorar), além de possuir um detalhe muito ruim que é o fato de precisar
+ limpar o float toda vez que vc o utiliza.
+  
+Em contrapartida o flexbox foi a primera específicação realmente pensada para a criação de 
+layouts web, de forma robusta, por isso o nome é flex, pois agora ele não faz só o trabalho
+de posicionar os elementos, mas também te dá uma forma de manter os filhos de um 
+flex-container flexíveis, portanto, responsívos.
+Ele pode controlar o alinhamento de tudo em uma dimensão, desde o sonhado alinhamento
+vertical (que era impossível antes do flexbox, ou se valia de hacks), controle fino do
+alinhamento (inicio, centro, fim), adaptar para controlar se a linha é na vertical ou
+na horizontal, fazer com que determinados elementos não possuam mais medidas 
+fixas, assim mantendo eles esticados para preencher determinada direção e etc.
+  
+Hj em dia a específicação mais recente e poderosa para a criação de layouts
+é o CSS Grid, que é basicamente o flexbox com duas dimensões e muito mais 
+features, podendo criar certos tipos de layouts de forma totalmente responsiva
+sem o uso de nenhuma media query.
+   
+A conclusão aqui é que para layoutar prefira sempre o flexbox e o CSS Grid,
+um não irá anular o outro, sendo o flexbox mais indicado para contextos de
+mais suporte a navegadores antigos, e principalmente quando se precisa 
+controlar os elementos em uma linha/coluna só e usar o grid para controlar
+alinhamento de itens complexos, que dependem de muitos valores relativos
+e principalmente quando necessitamos de um controle em duas dimensões do
+layout de um elemento, como por exemplo a estrutura geral de um site.
+O float em geral irá ser bem menos vantajoso para a criação de layouts
+do que seus sucessores, mas não significa que ele se tornou inútil, hj
+em dia ele é usado para a criação do efeito de texto que contorna uma 
+imagem quando é utilizado em conjunto com a propriedade shape-outside. </pre>
+</body>
+</html>

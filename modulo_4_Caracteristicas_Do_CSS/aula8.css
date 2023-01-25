@@ -1,0 +1,32 @@
+body{
+    margin: 20px;
+}
+
+.box{
+    font-size: 15px; 
+    color: blue;
+}
+h1{
+    font-size: 30px;
+    color: red;
+    text-align: center;
+}
+
+/*o h1 não esta herdando o a fonte do .box. Logo para isso acontecer basta fazermos o seguinte*/
+
+.box h1{
+    font-size: inherit;/* comando faz com que o h1 herde a fonte do .box*/
+    color: inherit;
+    font-weight: inherit; /*tira o negrito do h1 pois herdou do .box*/
+    }
+
+
+.form-control {
+    display: block; /*coloca um bloco abaixo do outro*/
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.124);
+    padding: 0.25em;
+    margin-bottom: 15px;
+    text-align: justify;
+}

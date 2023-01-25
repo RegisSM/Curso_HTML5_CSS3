@@ -1,0 +1,35 @@
+table,td{
+    border: 2px solid black;
+ 
+}
+h1{
+    font-size: 30px;
+    font-weight: bold; /*deixa negrito*/
+}
+body{
+    background-color: none;
+}
+@media only screen {  /*comandos que são acionados direntamente na tela do usuario*/
+ 
+    h1{
+      display: none;
+     
+    }
+}
+@media only print {  /*comandos que são acionados quando vai imprimir*/
+ 
+    /*h1{
+        font-size: 70px;
+        font-weight: normal; /*não deixa em negrito
+    } */
+    h1{
+      display: none;
+    }
+   /* table, td{ border: 0;} */    
+}
+/* @media all {  comandos que são acionados direntamente na tela do usuario e também no print
+ 
+    h1{
+      display: none;
+     
+    } */

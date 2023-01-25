@@ -1,0 +1,27 @@
+/* body{ font-size: 20px;}  /* o body com 20px*/
+
+/* h1{ font-size: 3em; /* Logo o h1 tera 60px }*/
+/*.box
+{
+    font-size: 2em;  /* E o .box tera 40px.
+}
+ /*Portanto o em pega do item diretamente superior a ele*/
+/*.box-interna{
+    width: 10em; /* Logo 10em equivale neste caso a 400px
+    height: 10em;
+    background-color: rgb(233, 83, 83);
+} */
+
+
+html{ font-size: 10px;}  
+
+h1{ font-size: 3rem; /* Logo o h1 tera 30px*/ }
+.box{
+    font-size: 2rem;  /* E o .box tera 20px. */ 
+}  
+ /*Portanto o em pega do item diretamente superior a ele*/
+.box-interna{
+    width: 20rem; /* Logo 20rem equivale neste caso a 200px*/
+    height: 20rem;
+    background-color: rgb(233, 83, 83);
+} 

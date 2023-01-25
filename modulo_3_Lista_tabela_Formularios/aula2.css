@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+ }
+ 
+ body{
+     font-size: 30px;
+     margin: 50px;
+     text-align: center;
+ }
+ 
+ p{
+     color: black;
+     font-size: 25px; /*tamanho da fonte*/
+     font-weight: bold; /*negrito*/
+     font-family: 'Times New Roman', Times, serif; /*tipo de fonte*/
+     text-align: justify; /*alinhamento*/
+    /* text-transform: uppercase;*/ /* deixa o texto maiusculo*/
+    letter-spacing: normal;/*espaçamento entre letras*/
+    word-spacing: normal; /*espaçamento entre palavras*/
+    line-height: 26px; /*espaçamento entre linhas*/
+    text-shadow: 0px 2px 2px green; /* sobreamento*/
+ }
+ 
+ 

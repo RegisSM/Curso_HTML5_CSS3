@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor parte 1 e 2</title>
+    <style>
+        input,a{
+            display: block;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+        [required]{
+            background-color: aquamarine;
+        }
+        input[type=password]{
+            background-color: brown;
+        }
+  
+        /*Seleciona os conteudos que começarem com o atributo desejado ex: '  a[href^="https"] '*/
+        a[href^="https"]{
+            background-color: black;
+            color: white;
+        }
+  
+
+        /*Todas as ocorrências na tag a que tenham o atributo escolhido receberão o estilo, ex: 'a[href*="futebol"] '     */
+        a[href*="futebol"]{
+            background-color: azure;
+            color: black;
+        }
+  
+        a[href*="https:"]{background-color: aquamarine;
+        color: brown;}
+        a[href*="http:"]{ background-color: red;}
+
+        /*Seleciona os conteudos que terminm com o atributo desejado ex: */
+        a[href$=".htm"]{background-color: beige;}
+    </style>
+</head>
+<body>
+     <input type="text" name="usuario" required/>
+     <input type="password" name="senha"/>
+     <a href="http://www.google.com"> Google</a>
+     <a href="https:"> Site</a>
+     <a href="https://tecnoblog.net/noticias/2022/04/12/comunidades-do-whatsapp-vao-reunir-grupos-com-assuntos-relacionados/"> Watsapp notícia</a>
+     <a href="https://sites.unipampa.edu.br/lbda/files/2015/04/Sugestão-para-Atividades-Práticas.pdf"> Trump notícia</a>
+     <a href="https://www.uol.com.br/esporte/futebol/ultimas-noticias/2022/04/09/partidacae-futebol-de-outro-mundo-fas-enaltecem-partida-de-neymar.htm"> Neymar notícia</a>
+     <a href="https://www.uol.com.br/esporte/futebol/ultimas-noticias/2021/06/25/por-que-fred-encanta-tite-e-alcancou-marca-de-neymar-mas-mantem-rejeicao.htm">Fred notícia</a>
+
+</body>
+</html>

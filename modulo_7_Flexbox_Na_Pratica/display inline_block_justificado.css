@@ -1,0 +1,7 @@
+.example:after {
+    content: ''; /*deixa o conteudo justificado*/
+    color: red;
+    display: inline-block;
+    width: 100%;
+}
+/* link:https://www.youtube.com/watch?v=Yj9-N9BEVeM&list=PLirko8T4cEmx5eBb1-9j6T6Gl4aBtZ_5x&index=3 */

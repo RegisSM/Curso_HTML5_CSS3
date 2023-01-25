@@ -1,0 +1,44 @@
+/*body{
+    margin: 0px auto;
+    max-width: 500px;
+}
+
+.container{
+    width: calc(100% - 20px);
+   
+    height: 200px;
+    background-color: #CCC;
+   
+}  Exemplo passado na aula*/ 
+
+
+/* primeiro Modelo que me ajudaram a resolver*/
+/* body{
+    margin: 0;
+    display:flex;
+    justify-content: center;
+ }
+ 
+ .container{
+     height: calc(100% - 50px);
+     width: calc(100% - 50px);
+     height: 200px;
+     background-color: #CCC;
+ }
+ h1{text-align: center;} */
+
+
+ /* Segundo modelo que me ajudaram a resolver*/
+ body{
+    /* margin: 0px auto; deixa centralizado*/ 
+    margin: 0 auto;
+    width: calc(100% - 80px);
+    background-color: rgb(180, 179, 179);
+ }
+ .container{
+     height: 200px;
+     background-color: #CCC;
+     border-radius: 15px;
+ }
+ h1{text-align: center;
+color: blueviolet;}

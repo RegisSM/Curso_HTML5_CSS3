@@ -1,0 +1,447 @@
+*{
+    margin: 0; padding: 0;
+}
+body{
+    margin: 0;
+    font-family: arial;
+    font-size: 14px;
+    background-color: #ccc;
+}
+/*****Div do Menu Preto*****/
+.barraPreta{
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+}
+/*********MenuEsquerdo*********/
+.barraInterior{
+    width: 100%;
+    max-width: 1050px;
+    height: 40px;
+    margin: auto;
+}
+.barraEsquerda{
+    height: 40px;
+    width: 50%;
+    float: left;
+    color: white;
+    line-height: 40px;
+}
+.barraEsquerda ul{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+.barraEsquerda li{
+    float: left;
+    height: 40px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.barraEsquerda li a{
+    text-decoration: none;
+    color: white;
+}
+.barraEsquerda li:hover  a{
+    display: block;    
+    color:rgb(38, 137, 235);
+}   
+.barraEsquerda li .ativo{
+    text-decoration: none;
+    color:blue;
+}
+/*********MenuDireito*********/
+.barraDireita{
+    width: 50%;
+    height: 17px;
+    float: right;
+    color: white; 
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+.barraDireita  a{
+    float: right;
+}
+.barraDireita input{
+    float: right;
+}
+.barraDireita input .lupinha{
+    background-color: red;
+    height: 20px;
+    width: 20px; 
+
+}
+.barraDireita img{
+    margin-left: 5px;
+}
+.BarraBusca{
+    margin-left: 5px;
+ outline: 0;
+ width: 110px;
+ height: 26px;
+ padding: 0; /* deixa padrao em todos navegador*/
+ border: 0;
+}
+/*********Topo*********/
+.topo{
+    height: 90px;
+    color: white;
+    font-size: 24px;
+}
+.topoInferior{
+    width: 100%;
+    max-width: 1050px;
+    height: 90px;
+    margin: auto;
+}
+.topologo{ 
+    float: left;
+    width: 30%;
+    line-height:90px;
+    color: red;
+    height: 90px;
+    font-size: 35px;
+    font-family:Luminari, fantasy;
+}
+.topoInferior .topobaner{ 
+    float: right;
+    width: 70%;
+    height: 70px;
+    line-height:80px;
+    color: white;
+    text-align: center;
+    background-color: red;
+    margin-top: 7.5px; /*95-80/2=7.5*/
+}
+
+/*********MenuPrincipal*********/
+.div_De_Fora{
+    width: 100%;
+    height: 40px;
+    background-color: red;
+}
+.MenuPrincipal{
+    width: 100%;
+    max-width: 1050px;
+    margin: auto;
+    height: 40px;
+   
+}
+.MenuPrincipal ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;  
+}
+
+.MenuPrincipal li{
+    height: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+    line-height: 40px;
+    float: left;
+}
+
+
+.MenuPrincipal li, a{  
+    color:#FFF;
+    text-decoration: none;
+    display: inline-block;
+}
+.MenuPrincipal li:hover{  
+    background-color:#FF6666;
+    text-decoration: none;
+    display: block;
+}
+.submenu{
+    display: none;
+    width: 109px;
+    position: absolute;
+    background-color: red;
+    margin-left: -8px; /*Resolve o problema do sub menu sendo deslocado*/
+
+}
+.MenuPrincipal li:hover .submenu  {
+    display: block;  
+}
+.submenuItem{
+    width: 95px;
+    padding-left: 7px;
+    padding-right: 7px;
+    line-height: 40px;
+}
+
+.submenuItem:hover{
+    background-color: #FF6666;
+    
+}
+/********UltimasNoticias********/
+
+.NExterno{
+    width: 100%;
+    height: 50px;
+}
+.Nespaco_Interno{
+    margin: auto;
+    height: 50px;
+    width: 100%;
+    max-width: 1050px;
+   
+
+}
+.EspacoDeUltimasNoticia{
+    height: 30px;
+    background-color: #FFF;
+    border: 1px solid#ccc;
+    margin-top: 15px;
+}
+.UltimasNoticiasEsquerda{
+    display: inline-block;
+    height: 30px;
+    background-color: red;
+    color: white;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+.UltimasNoticiaDireita{
+    height: 30px;   
+    display: inline-block;
+    line-height: 30px;
+    color: black;
+    padding-left: 5px;
+    margin: 0;
+}
+/********Container********/
+.containerInterno{
+    width: 100%;
+    clear: both;
+    max-width: 1050px;
+    margin: auto;
+}
+
+/********SlideShow********/
+.slide_Show{
+    height: 335px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.slide_Show_Area{
+    height: 335px;
+    transition: all 1s;
+    background-color:black;
+    width: 100000px; /*Tira o  espaço vazio de uma trasição para outra*/
+}
+
+.slide{
+    height: 335px; 
+    float: left;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+.slideInfo{
+    height: 70px;
+    background-image: url('../images/slideshow_bg.png');
+    background-size: auto 70px; /*largura automatica, e altura de 70px*/
+    margin-top: 265px; /*335-70=265*/
+}
+.slideInfo_Titulo{ 
+    font-size: 20px;
+    color: white;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.slideInfo_SubTitulo{ 
+    font-size: 13px;
+    color: white;
+    padding-left: 20px;
+}
+.slidebolinhas{ 
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.bolinha{
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.3);
+    border-radius: 10px;
+}
+/********Fim_Do_Slide_Show********/
+
+/********Container********/
+
+.Cont_interiorEsquerdo{
+    width: 765px;/*1050-275-12=763*/
+    float: left;
+}
+.containerInternoDireito{
+    width: 273px;
+    display: inline-block;
+    min-height: 100%;
+    margin-left: 12px;
+
+}
+.Cont_widget{
+    background-color:#FFF;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    
+}
+.Cont_widget_titulo{
+     height: 30px;
+     color: #FFF;
+     line-height: 30px;
+     text-align: center;
+     background-color: #333;
+     border: 1px solid #CCC;
+}
+.Cont_widget_Conteudo{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+h1{
+    text-align: center;
+    font-size: 15px; 
+}
+.site_noticia{ 
+    color: red;
+    text-align: center;
+}
+.noticia_Esquerda {
+    text-align: justify; 
+    padding: 5px;
+    margin: 0 10px;
+    padding: 10px 0;
+    color: black;
+    border-bottom: 1px solid#CCC;
+}
+.site_noticia:hover{
+    color: red;
+}
+.NareaEsquerda{
+    width: 430px;
+    float: left;
+    height: 420px; 
+}
+.NareaDireita{ 
+    width: 333px;
+    float: right;
+    height: 420px; 
+}
+.clear{
+    clear:both;
+}
+/*Noticias*/
+.Nimg {
+    text-align: left;
+    width: 100px;
+    height: 80px;
+    border: 1px solid rgb(12, 7, 7);
+    padding: 3px;
+    float: left;
+}
+.Nimg img{
+    width: 100px;
+    height: 80px;
+    border:0px;
+}
+.NTitulo{
+    margin-left: 6px;
+    font-size: 16px;
+    float: left;
+    /*320 - 100 - 6 - 6 - 1- 1= 206*/
+    width: 206px;
+}
+.NItem{
+    text-align: left;
+    height: 90px;  /*serve para deixar organizando verticalmente*/  
+   
+    margin-bottom: 10px;
+}
+.Ninfo{
+    font-size: 12px;
+    margin-left: 6px;
+    color:#999;
+    width: 206px;
+    float: left;
+}
+.NBig{
+    margin:0 auto;
+}
+.NBig .Nimg{
+    width: 382px;
+    height: 233px;
+}
+
+.NBig .Nimg img{
+    width: 379px;
+    height: 233px;
+}
+.NBig .NTitulo{
+    padding-top: 5px;
+    font-size: 30px;
+    width: 382px; /* largura do texto*/
+    padding-bottom: 5px;
+    margin: 0;
+}
+.NBig .Ninfo{
+    width: 400px;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+/*Esportes*/
+.Cont_widget .Cont_widget_Conteudo .NBig{
+    width: 382px;
+    height: 232px;
+    margin:  0 auto;
+   
+}
+
+.NBig .Nimg img{
+    width: 382px;
+    height: 232px;
+    margin: 0 auto;
+ 
+}
+.NBig .NTitulo{
+    padding-top: 5px;
+    font-size: 30px;
+    width:382px; /* largura do texto*/
+    padding-bottom: 5px;
+    margin: 0;
+}
+.conteudoEsporte{
+    text-align: justify;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: black;
+    font-size: 14px;
+    width:382px;
+}
+p{
+    margin-top: 10px;
+    width:382px;
+}
+.levaDireita{ 
+    margin-left: 25px;
+}
+.rodape{
+    background-color: red;
+  
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    color: white;
+    clear: both;
+}

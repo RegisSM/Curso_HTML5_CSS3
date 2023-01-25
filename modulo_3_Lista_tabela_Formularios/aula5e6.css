@@ -1,0 +1,38 @@
+*{ box-sizing: border-box;}
+
+h1{font-family: 'Sedgwick Ave', cursive;}
+
+body{
+    font-size: 30px;
+    margin: 50px;
+}
+table{
+    
+    text-align: center;
+    width: 700px;
+    height: 400px;
+  /*  border: 1px solid black; */
+}
+table thead{
+    background-color: chartreuse;
+}
+/*table tbody{
+  background-color: cornflowerblue;
+}*/
+th{ font-weight: normal;}
+th,td{
+    border: 20px solid none; /* colocar borda nas linhas e colunas*/
+    padding: 10px;
+}
+
+tbody tr:hover{  /* tr: linha*/ 
+    background-color: green;
+}
+
+tbody td{ /* td: coluna*/ 
+    border-bottom: 1px solid black; /* colocar borda abaixo, ou seja de uma coluna para outra*/
+}
+
+tbody tr:nth-child(even){
+    background-color: rgba(97, 156, 243, 0.767);
+}

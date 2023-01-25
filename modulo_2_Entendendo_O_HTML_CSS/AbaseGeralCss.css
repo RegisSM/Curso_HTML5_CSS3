@@ -1,0 +1,19 @@
+h1{
+    color: red;
+}
+#titulo{
+    color: green;
+    font-weight: normal;
+}
+.texto{
+    color: rgb(175, 108, 158);
+    font-weight: bold;
+}
+/* caso quere adicionar um comado para os 3 segue*/
+h1 , #titulo, .texto{
+    font-size: 25px;
+}
+/* outro caso de seleção*/
+ul li{
+    color: rgb(44, 38, 38);
+}

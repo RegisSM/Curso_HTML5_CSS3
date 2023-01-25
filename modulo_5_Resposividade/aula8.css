@@ -1,0 +1,24 @@
+body{
+    display: flex; /*organizar os elementos HTML de forma responsiva. Na prática, ao definirmos um elemento com esse
+     valor, ele funciona como um container para agrupar os elementos filhos, que são considerados flex-itens 
+     e são organizados nos sentidos horizontal ou vertical. Ao definirmos o display como flex, podemos utilizar
+      outras propriedades adicionais para estabelecer como os elementos serão dispostos na página ou em um espaço
+     específico.*/
+}
+div{
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+}
+
+@media ( orientation: landscape){  /*adapta o site para horizontal de acordo com a proporcao da tela*/
+body{
+    flex-direction:row; /*direciona para linha*/
+}
+}
+
+@media (orientation:portrait) { /*adapta o site para vertical de acordo com a proporcao da tela*/
+body{
+    flex-direction: column; /*direciona para coluna*/
+}
+}

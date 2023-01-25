@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomeclatura Parte 2</title>
+</head>
+<style>
+        /*Regras para Nomeclatura Do Bem
+    
+    BEM= Block element Modifier
+
+    Modifier:
+    - O modifier é dependente do elemento ou bloco. Ou seja, deve sempre ter um elemento para acompanha-lo
+    Ex em html:     <form class="form form--theme-xmas">
+                       <input type="text" class="form__input" id="">
+                    </form>
+    -Para modifier do Bloco, se usa: Bloco--nome-domodificador
+    -Para modifier do Elemento, se usa: form__imput--Nome-do-doificador
+    -Para modifier do Bloco usando Html:
+    
+    */
+   
+    *{padding: 0;
+    margin: 0;
+    box-sizing: border-box;}
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form{
+    
+        background-color: #EEEEEE;
+        padding: 15px;
+        border: 1px solid #CCCCCC;
+        width: 300px;
+    }
+    .form__input{
+        display: flex;
+        border: 1px solid #CCCCCC;
+        background-color: white;
+        padding: 10px;
+        font-size: 15px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .form__submit{
+        display: flex;
+        justify-content: center;
+        border: 1px solid #CCCCCC;
+        background-color: #999999;
+        padding: 10px;
+        font-size: 15px; 
+        width: 100%;
+    }
+    /*Comando para diminur o formulario*/
+
+     /*Unico caso que se pode atrelar item a outros.
+     Onde coloca um form--small para mexer no efeito do form
+     e em seguida dentro do form--small utiliza-se o form__input recebera
+     os efeitos que deseja na class informada ex de como fica: .form--small .form__input{}*/
+    @media (max-width:500px){
+     .form--small{
+        padding: 5px;
+        width: 200px;
+    }
+    .form--small .form__input{
+        padding: 5px;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    .form--small .form__submit{
+        padding: 5px;
+        font-size: 13px;
+    }
+    .form__submit--green{
+     background-color: green;
+     color: white;
+    }
+}
+</style>
+<body>
+     <form class="form form--big form--small">
+         <input type="text" class="form__input" id=""/>
+         <input type="submit" value="Enviar" class="form__submit form__submit--green" id=""/>
+     </form>
+</body>
+</html>

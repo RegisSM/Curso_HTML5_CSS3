@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomeclatura Parte 1</title>
+</head>
+<style>
+    /*Regras para Nomeclatura Do Bem
+    
+    BEM= Block element Modifier
+    
+    Block: 
+    - Deve ser construido sem Dependência hierarquica.  
+      Ex: .block{} .
+      Exemplos que não pode: body . bloco{}; .container .bloco{}
+    
+    - Usar apenas class. Isso significa, sem "tag" e sem "id"
+
+    Element:
+    - Sempre o Nome é precedido do Block e __  Ex: .form{} => .form__input-do-elemento. 
+    - Em questão de html temos:
+         <form class="form">
+             <input type="text" class="form__input" id="">
+         </form>
+    - Deixa-lo Independente.
+
+    Modifier:
+    - O modifier é dependente do elemento ou bloco. Ou seja, deve sempre ter um elemento para acompanha-lo
+    Ex em html:     <form class="form form--theme-xmas">
+                       <input type="text" class="form__input" id="">
+                    </form>
+    -Para modifier do Bloco, se usa: Bloco--nome-domodificador
+    -Para modifier do Elemento, se usa: form__imput--Nome-do-doificador
+    -Para modifier do Bloco usando Html:
+    
+    */
+    
+</style>
+<body>
+     <form class="form form--theme-xmas">
+         <input type="text" class="form__input" id="">
+     </form>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <style>
+        body, ul{margin: 0; }
+        header, nav, p, dl{font-family: 'Times New Roman', Times, serif;}
+        header{ margin-top: 0; text-align: center; background-color: #000; color: #FFF;}
+        
+        nav{  background-color: #555; font-size: 20px; border: 1px solid black; }
+        
+        .menu{ font-weight: bold; float: center; color: #FFF;  padding: 0; }
+        
+        .menu li{  list-style: none;display: inline-block; } 
+        
+        .menu a{ text-decoration:none; display: block; padding: 15px;}
+        
+        .menu a:hover{  text-decoration:none; background-color: #FFF; color: #000; }
+        .menu a:hover{ transition: all 1s linear; border: 1px solid red;}
+        
+        .submenu{border: 0.5px solid red; position: absolute; display: none;}    
+
+        .menu li:hover .submenu{ display: block;}
+
+        .submenu .menu li { display: block;}
+                     
+        .container{ display: flex; min-height: 90vh;}
+        
+        /* para definir a largura do container basta aplicar os seguintes comandos no aside*/ 
+                aside{width: 250px; background-color: #888;}
+                h1{text-align: center; color: #fff;}
+                main{ flex:1; background-color: rgba(29, 29, 29, 0.952); text-align: center;}
+       
+                p, dl{text-align: justify; font-size: 20px; color: #fff; margin: 15px; }      
+       
+        footer { background-color: #555; padding: 5px; color: #fff;}
+       
+        address, a{color: #fff; margin: auto;  text-align: center;}
+        
+        figure{ 
+            border: 3px solid #888 ; 
+            padding: 5px;
+            border-radius: 5px;  
+            display: inline-block; 
+            transition: all 1s linear;
+            /*position: relative;
+            left: 45%;
+            top: 3.9%;         
+            margin: -50px 0 0 -150px;*/
+        } 
+        figure:hover{  transition: all 1s linear; border: 3px solid red ;}
+        
+        figcaption{ background-color: black;  color: #fff; padding: 8px;  }
+        figcaption:hover{transition: all 1s linear; background-color: red;  color: #fff; padding: 8px;  }
+
+    </style>
+</head>
+<body> 
+        <header>Protótipo</header>
+        <nav>
+            <ul class="menu">
+                <li><a href=""> Home </a></li>
+                <li><a href=""> Sobre </a>
+                    <div class="submenu"> 
+                        <ul class="menu">
+                            <li > <a href=""> Item 1 </a></li>
+                            <li > <a href=""> Item 2 </a></li>
+                            <li > <a href=""> Item 3 </a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href=""> Contanto</a>
+                    <div class="submenu"> 
+                        <ul class="menu">
+                            <li > <a href=""> Contato 1 </a></li>
+                            <li > <a href=""> Contato 2 </a></li>
+                            <li > <a href=""> Contato 3 </a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>    
+        </nav>
+
+        <div class="container">
+            
+            <aside> <!-- separa os assuntos em sessoes-->      
+            
+            </aside>
+
+            <main>
+                <h1> Conteúdo Principal da Página</h1>
+                <dl> 
+                    <dt>Programar</dt>
+                    <dd>Fazer o programa de; planejar; incluir em programação.</dd>
+                    <dt>Exercitar</dt>
+                    <dd>Adestrar, formar, habilitar: exercitar os soldados nas armas.</dd>
+                </dl>
+                
+              
+                <figure>     
+                    <img src="http://www.google.com.br/google.jpg" alt="">
+                    <figcaption>Logo do Google</figcaption>
+                 </figure>
+                <p>A tag figure é bem mais abrangente, e como o uso mais comum dela é com imagens, a aula foca apenas nisso, porém ela também pode ser usada para snippets de código, gráficos, e qualquer outro elemento visual (não obrigatóriamente precisa de legenda, mas se tem é um forte indicador que pode ser usada com figure). A ideia da tag figure demonstrada nas documentações oficiais, é um pedaço de conteúdo independente (por isso pode ser uma imagem, código, gráficos e etc) que tem relação com o conteúdo principal em que ela se encontra, e por isso que no início, ele explica que ela geralmente é utilizada em posts de blogs, afinal ela poderia estar no início ou no meio do texto que não perderia o seu significado, mas mesmo assim ela está relacionada com aquele conteúdo onde ela se encontra (no caso, o texto)</p>
+            </main>
+
+        </div>
+       
+        <footer>
+            Todos os direitos resevados...
+            
+            <address> 
+                Site Feito por <a href="">Regis</a> </br>
+                E-mail para contanto: suporte@b7web.com.br </br>
+                Endereço tal, 100 - centro- Minas Gerais.
+            </address>
+            
+        </footer>
+
+</body>
+</html>

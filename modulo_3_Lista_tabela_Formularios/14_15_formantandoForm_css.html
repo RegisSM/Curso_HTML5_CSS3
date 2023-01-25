@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aula14_15.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Área de cadastro</h2>
+    <form action="5_6_Tabela.html" method="GET">
+       <!--Temos dois jeitos de apresentar o label.
+         O primeiro é: -->
+
+       <label for="nome">Nome: </br> </label> <input type="text" name="nome" id="nome"/> 
+    
+        <label > Descrição: </br>
+         <textarea name="descri"></textarea>
+        </label>  
+
+        <label> Estado Civil:
+            <br>
+            <input type="radio" name="civil" value="solteiro" class="civil"> Solteiro
+            <input type="radio" name="civil" value="casado" class="civil"> Casado <br>
+            <input type="radio" name="civil" value="divorciado" class="civil"> Divorciado
+            <input type="radio" name="civil" value="viuvo" class="civil"> Viúvo
+        </label>
+        
+        <label> Categoria: </br>
+            <select name="categoria">
+                <option value="1">Categoria 1</option>
+                <option value="2">Categoria 2</option>
+                <option value="3">Categoria 3</option>
+                <option value="4">Categoria 4</option>
+                <option value="5">Categoria 5</option>
+            </select>
+        </label> 
+       
+       <label>
+            <input type="checkbox"/> Eu declaro que li, e aceito os <a href="4_ListaNoHTML.html" target="blank" class="termoslink"> termos de uso. </a> </br>
+       </label> 
+
+        <button>Fazer Cadastro</button>
+</body>
+</html>

@@ -1,0 +1,27 @@
+  /*-----------------------------Explicação do display--------------------------------------------*/
+  
+.div1, .div2, .div3,.div4, .div5, .div6, .div7, span{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 5px;
+   
+}
+
+span{
+ /*display: none; oculta o item na tela*/
+ display: block; /*o item passa a funcionar como um bloco. Neste exemplo o sanp vira 
+ um bloco iqual o div*/
+}
+
+/*agora para tirar as div de um bloco, e transforma-las em caixa de texto( inline=dentro da linha) basta que:*/
+
+.div1, .div2, .div3,.div4, .div5, .div6, .div7{
+   display: inline;
+   margin: 10px;
+}
+/*agora para tirar caso queire que as div comporte como blocos, e também em linhas basta que:*/
+.div1, .div2, .div3,.div4, .div5, .div6, .div7,span{
+    display: inline-block;
+    margin: 10px;
+ }

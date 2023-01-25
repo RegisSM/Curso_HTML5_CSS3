@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    color: blue;
+    /*background-color:rgb(60, 255, 0);*/
+}
+h1{
+    border: 2px solid currentColor; /* utiliza o efeito herança onde é herdado a cor do body*/
+    display: flex;
+    display: inline-block;
+    padding: 5px;
+}

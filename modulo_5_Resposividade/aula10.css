@@ -1,0 +1,26 @@
+/** = fara efeito em todos os elementos (tudo)
+:root = elemento raiz de um documento, mas como a gente sempre usa com HTML ele equivale a tag html
+html = tag html*/
+
+:root{
+    --bg-color: #000;
+    --bg-second: #CCC;
+    /*--font-color: red; */
+    --title: "Times new romam";
+}
+body{
+    background-color: var(--bg-color);
+}
+h1{
+    font-family: var(--title);
+    color: var(--font-color,#00f); /*Caso não tiver o color no root, basta declarar direto no item*/
+    font-weight: bold;
+}
+
+.container{
+   /*  --azul: blue; */
+    background-color: var(--bg-second);
+   /* color:var(--azul); */
+   color:var(--font-color);
+   font-family: var(--title);
+}

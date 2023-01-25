@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        
+        }
+        div{
+            background-color: green;
+            padding: 20px;
+           
+        }
+        
+        /*O before sera aplicado antes o elemento*/
+        div::before{
+            content: "";
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            background-color: red;
+            color: white;
+            display: inline-block;
+        }
+
+        /* O after sera aplicado após o elemento*/
+        div::after{
+            content: "";
+            background-color: red;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+            color: white;
+           
+        }     
+
+    </style>
+</head>
+<body>
+        <div>Texto 1</div>
+
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        display: flex;
+        height: 800px;
+        background-color: #Ddd;
+        flex-wrap:nowrap; /**/
+        flex-wrap:wrap; /*caso a largura de cada div for muito grande, o comando ira quebra a linha*/
+        /*flex-flow: row nowrap; /*apresenta duas característica, uma se vai setar em column ou linha. Segunda se vai setar em nowrap ou wrap*/
+        /*justify-content: center; /* centraliza horizontalmente se flex-direction estiver setado como row. ou seja vai setar de acordo com o flex-direction*/
+        flex-direction: row; /*o row-reverse comando inverte a ordem para direita*/
+        justify-content: flex-end; /* alinha para canto inferior  direito*/
+        align-items: flex-end; /* alinha para baixo da pagina e na direção docanto inferior direito se acompanhando com  justify-content: flex-end;*/
+        /* align-items: center /*alinha na direção contraria  que sera exibida no justify-content */
+        /*justify-content: flex-start; /*empurra o conteudo para direita*/
+        /*justify-content: flex-end; /*empurra o conteudo para esquerda*/
+        /*justify-content: space-around; /*alinha os item de forma que todos os espaçamentos seje igual*/
+        /*justify-content: space-between; /*alinha o primeiro e ultimo item com a tela, e faz outro espaçamento no interir dos conteudo de forma que fique paralelos*/
+    }
+    .container div{
+        height: 200px;
+        width: 200px;
+        background-color: #FF0000;
+        margin: 10px;
+        padding: 10px;
+        font-size: 18px;
+    }
+  /*no space-evenly os itens são distribuídos para que o espaçamento entre dois 
+  itens (e o espaço nas bordas) seja igual.Já no space-around os itens são distribuídos
+  igualmente na linha com espaço igual ao seu redor. Observe que visualmente os espaços
+  não são iguais, pois todos os itens têm espaço igual nos dois lados. O primeiro item 
+  terá uma unidade de espaço contra a borda do contêiner, mas duas unidades de espaço 
+  entre o próximo item, porque esse próximo item possui seu próprio espaçamento que se aplica*/
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div1">4</div>
+        <div class="div2">5</div>
+       
+    </div>
+
+    <pre> 
+Olha o float foi a primeira propriedade pensada para layoutar o site,
+porém ele serve para layoutar um site de maneira parecida com uma 
+revista/jornal, tanto é que não é possível centralizar nada usando 
+float (tem técnicas pra isso se for na horizontal, mas ai vc já tá 
+sujando o HTML do site com divs desnecessárias, agora na vertical só da pra 
+sentar e chorar), além de possuir um detalhe muito ruim que é o fato de precisar
+ limpar o float toda vez que vc o utiliza.
+  
+Em contrapartida o flexbox foi a primera específicação realmente pensada para a criação de 
+layouts web, de forma robusta, por isso o nome é flex, pois agora ele não faz só o trabalho
+de posicionar os elementos, mas também te dá uma forma de manter os filhos de um 
+flex-container flexíveis, portanto, responsívos.
+Ele pode controlar o alinhamento de tudo em uma dimensão, desde o sonhado alinhamento
+vertical (que era impossível antes do flexbox, ou se valia de hacks), controle fino do
+alinhamento (inicio, centro, fim), adaptar para controlar se a linha é na vertical ou
+na horizontal, fazer com que determinados elementos não possuam mais medidas 
+fixas, assim mantendo eles esticados para preencher determinada direção e etc.
+  
+Hj em dia a específicação mais recente e poderosa para a criação de layouts
+é o CSS Grid, que é basicamente o flexbox com duas dimensões e muito mais 
+features, podendo criar certos tipos de layouts de forma totalmente responsiva
+sem o uso de nenhuma media query.
+   
+A conclusão aqui é que para layoutar prefira sempre o flexbox e o CSS Grid,
+um não irá anular o outro, sendo o flexbox mais indicado para contextos de
+mais suporte a navegadores antigos, e principalmente quando se precisa 
+controlar os elementos em uma linha/coluna só e usar o grid para controlar
+alinhamento de itens complexos, que dependem de muitos valores relativos
+e principalmente quando necessitamos de um controle em duas dimensões do
+layout de um elemento, como por exemplo a estrutura geral de um site.
+O float em geral irá ser bem menos vantajoso para a criação de layouts
+do que seus sucessores, mas não significa que ele se tornou inútil, hj
+em dia ele é usado para a criação do efeito de texto que contorna uma 
+imagem quando é utilizado em conjunto com a propriedade shape-outside. </pre>
+</body>
+</html>

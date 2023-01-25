@@ -1,0 +1,55 @@
+.video{
+    width: 100%; /* o 100% ajuda o video a ficar responsivo*/
+    max-width: 600px;
+    margin: auto; /* centraliza*/
+}
+.video-area{
+    position: relative; /*consegue mudar a profundidade ex: deixar um acima do outro,
+    trocar o item*/
+    height: 0px;
+    background-color: #ccc;
+    padding: 0px 0px 56.25%; /*significa que a altura tem 56,25% do tamanho da largura. 
+    Para chegar neste valor basta: 1080/1920=0,5625 logo: 0,5625*100= 56,25%*/
+}
+
+.video-area iframe{
+    position: absolute; /*A propriedade position define qual o ponto de referencia que será 
+    utilizado  para posicionar ele ao objeto e as propriedades que posicionam ele são as: 
+    top, left, right e bottom.*/
+    top:0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;  /*preenche o espaço da largura no div em 100%*/
+    height: 100%; /*preenche o espaço da altura no div em 100%*/
+    border: 0px;
+  }
+
+  /*-----------------------------Explicação do position--------------------------------------------*/
+  
+.div1, .div2, .div3,.div4, .div5, .div6, .div7 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 5px;
+   
+}
+
+.div2{
+   /*position: static é o que vem por padrao no navegador*/
+   /*position: absolute; fica fluntuando, ou seja não faz parte mais da sequecia que ele estava*/
+     position: fixed;  /*Quando dece a pagina ele se mantem fixo em sua dimenção*/
+     left: 500px; 
+     top: 560px;/*Se não especificar o top ele assume sua altura anterior*/
+     margin: 5px;
+}
+.div3{
+      position: fixed;  /*Quando dece a pagina ele se mantem fixo em sua dimenção*/
+      right: 0; /* leva o div totalmente para direita da tela */
+      bottom: 0;/* leva o div totalmente para baixo, e permanecendo na direita*/
+
+ }
+
+ .div3{
+    position: relative;  /*Quando dece a pagina ele se mantem fixo em sua dimenção*/
+ 
+}

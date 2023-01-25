@@ -1,0 +1,17 @@
+table{
+    width: 60%;
+    padding: 0.5em;
+    box-shadow: 0 0 1em black;
+    margin: 0 auto;
+    }
+    
+    table, thead>tr>th {
+        border: 2px solid black;
+        border-collapse: collapse;
+        color: blue;
+    }
+    
+    table tr td{
+        border: 1px solid #d0cfcf;
+        font-weight: normal;
+    }

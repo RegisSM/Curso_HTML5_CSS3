@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Noticias</title>
+    <link rel="stylesheet" href="C:\Users\Regis\Desktop\B7Web\MODULO_HTML_CSS\Projetos\Criando_Portal\assets\css\style.css">
+    <script type="text/javascript" src="assets/javascript/script.js"></script>
+
+    </head>
+<body>
+     <div class="barraPreta">
+           <div class="barraInterior">
+               <div class="barraEsquerda">
+                   <ul>
+                      <li> <a class="ativo" href=""> Home </a></li>
+                      <li><a href="">Quem somos</a></li>
+                      <li><a  href="">Anuncie Aqui</a></li>
+                      <li><a  href="">Contato</a></li>
+                   </ul>
+               </div>
+                <div class="barraDireita"> 
+                    <input type="image" class="lupinha" src="assets/images/lupa.png" name="imagem" width="26" height="26"/>
+                    <input type="text" class="BarraBusca" name="busca" placeholder="Busca..."/>
+   
+                    <a href=""> <img src="assets/images/youtube.png" border="0" height="26" width="26px"></a>
+                    <a href=""> <img src="assets/images/twitter.png" border="0" height="26" width="26px"></a>
+                    <a href=""> <img src="assets/images/facebook.png" border="0" height="26" width="26px"></a>
+                    <a href=""> <img src="assets/images/googleplus.png" border="0" height="26" width="26px"></a>
+                    <a href=""> <img src="assets/images/rss.png" border="0" height="26" width="26px"></a>
+                    
+                </div>
+ 
+            </div>
+     </div>
+     
+     <div class="topo">
+          <div class="topoInferior">
+              <div class="topologo">  Portal Mega Zero</div>
+              <div class="topobaner"> 
+                    <a href="http://radiocandeiasfm.com.br/banner-anuncie-aqui-728x90/">
+                        <img src="http://radiocandeiasfm.com.br/wp-content/uploads/2019/03/banner-anuncie-aqui-728x90.jpg" alt="" width="735" height="70"/>  
+                    </a>
+              </div>
+          </div>
+     </div>
+
+     <div class="div_De_Fora">
+            <nav class="MenuPrincipal">
+                <ul>
+                    <li> <a href=""> Home</a></li>
+                    <li><a href="">Economia</a></li>
+                    <li><a href="">Entreterimento</a>
+                        <img src="assets/images/arrowdown.jpg" border="0" width="10"/>
+                        <div class="submenu">
+                            <a href=""> <div class="submenuItem">
+                                Submenu 1
+                            </div> </a>  
+                            <a href=""> <div class="submenuItem">
+                                Submenu 2
+                            </div> </a>  
+                            <a href=""> <div class="submenuItem">
+                                Submenu 3
+                            </div> </a>  
+                            <a href=""> <div class="submenuItem">
+                                Submenu 4
+                            </div> </a>  
+                            <a href=""> <div class="submenuItem">
+                                Submenu 5
+                            </div> </a> 
+                        </div>
+                    </li>
+                    <li><a href="">Esportes</a>
+                        <img src="assets/images/arrowdown.jpg" border="0" width="10"/>
+                        <div class="submenu">
+                            <a href=""> <div class="submenuItem">
+                                Submenu 1
+                            </div> </a>  
+                            <a href=""> <div class="submenuItem">
+                                Submenu 2
+                            </div> </a>  
+                            <a href=""> <div class="submenuItem">
+                                Submenu 3
+                            </div> </a>  
+                        </div>
+                    </li>
+                    <li><a href="">Geral</a></li>
+                    <li><a href="">Notícias</a>
+                        <img src="assets/images/arrowdown.jpg" border="0" width="10"/>
+                        <div class="submenu">
+                            <a href=""> <div class="submenuItem">
+                                Submenu 1
+                            </div> </a>  
+                            <a href=""> <div class="submenuItem">
+                                Submenu 2
+                            </div> </a>  
+                            <a href=""> <div class="submenuItem">
+                                Submenu 3
+                            </div> </a>  
+                            <a href=""> <div class="submenuItem">
+                                Submenu 4
+                            </div> </a>  
+                        </div>
+                    </li>
+                    <li><a href="">Polícia</a></li>
+                    <li><a href="">Videos</a></li>
+                </ul>
+            </nav>
+     </div>
+     <div class="NExterno">
+        <div class="Nespaco_Interno">
+            <div class="EspacoDeUltimasNoticia">
+                <div class="UltimasNoticiasEsquerda"> Últimas Notícias</div>
+                <div class="UltimasNoticiaDireita"> Criador da internet teme a perda de todas as memórias digitalis no futuro</div>
+            </div>
+        </div>
+     </div>
+    <div class="containerExerno">
+        <div class="containerInterno">
+            <div class="Cont_interiorEsquerdo">
+                <div class="slide_Show" id="slideshow">
+                   
+                    <div class="slidebolinhas">
+                        <div class="bolinha" onclick="mudarSlide(0)"></div>
+                        <div class="bolinha" onclick="mudarSlide(1)"></div>
+                        <div class="bolinha" onclick="mudarSlide(2)"></div>
+                        <div class="bolinha" onclick="mudarSlide(3)"></div>
+
+                    </div>
+                  
+                    <div class="slide_Show_Area">
+                        <a href="">
+                            <div class="slide" style="background-image:url('https://i0.wp.com/imagens.formigaeletrica.com.br/2017/12/yuri-boyka-1.jpg?resize=800%2C398') ;">
+                                
+                                <div class="slideInfo">
+                                        <div class="slideInfo_Titulo"> Titulo 1</div>
+                                        <div class="slideInfo_SubTitulo"> Subtutulo de Teste</div>
+                                </div>
+
+                            </div>
+                       </a>    
+                      
+                       <a href="">
+                            <div class="slide" style="background-image: url('https://play-lh.googleusercontent.com/proxy/5JpPdgGjg0YXpBwZERbVMforanFtGPTGK3YyhrWFMdEqj7JBjADrhDCZaLuzPLItADURU_xhRgWDKkrfr6C9V81dyvURUQi7E4UL34Jf4KJglmwDWhmJO8jF');">
+                                
+                                <div class="slideInfo">
+                                    <div class="slideInfo_Titulo"> Titulo 2</div>
+                                    <div class="slideInfo_SubTitulo"> Subtutulo de Teste</div>
+                                </div>
+
+                            </div>
+                        </a> 
+                        <a href="">
+                            <div class="slide" style="background-image: url('https://blogactionnews.files.wordpress.com/2017/06/boyka-2.jpg?w=863');">
+                            
+                                <div class="slideInfo">
+                                    <div class="slideInfo_Titulo"> Titulo 3</div>
+                                    <div class="slideInfo_SubTitulo"> Subtutulo de Teste</div>
+                                </div>
+                            
+                            </div>
+                        </a> 
+                        <a href="">                 
+                            <div class="slide"style="background-image:url('https://i2.wp.com/imagens.formigaeletrica.com.br/2017/12/yuri-boyka-2.jpg?resize=800%2C333')">
+                            
+                                <div class="slideInfo">
+                                    <div class="slideInfo_Titulo"> Titulo 4</div>
+                                    <div class="slideInfo_SubTitulo"> Subtutulo de Teste</div>
+                                </div>
+
+                            </div>
+                        </a> 
+
+                    </div>
+                </div>
+
+                    <div class="Cont_widget">
+                            <div class="Cont_widget_titulo">NOTÍCIAS</div>
+                                <div class="Cont_widget_Conteudo">
+                                  
+                                    <div class="NareaEsquerda">
+                                       
+                                        <div class="NItem NBig">
+                                            <div class="Nimg">
+                                                <img src="https://salto.sp.gov.br/wp-content/uploads/2020/03/Not%C3%ADcia-Falsa-%C3%A9-crime.jpeg" alt="">
+                                            </div>
+                                            <div class="NTitulo">Exemplo de uma notícia</div>
+                                            <div class="Ninfo"> 500 comentarios. Publicado há 5 dias atrás.</div>
+                                        </div>
+                                     
+                                    </div>
+                                
+                                    <div class="NareaDireita">
+                                        <div class="NItem">
+                                                <div class="Nimg">
+                                                    <img src="https://salto.sp.gov.br/wp-content/uploads/2020/03/Not%C3%ADcia-Falsa-%C3%A9-crime.jpeg" alt="">
+                                                </div>
+                                                <div class="NTitulo">Exemplo de uma notícia</div>
+                                                <div class="Ninfo"> 500 comentarios. </p> Publicado há 5 dias atrás.</div>
+                                        </div>
+                                    
+                                    
+                                        <div class="NItem">
+                                                <div class="Nimg">
+                                                    <img src="https://salto.sp.gov.br/wp-content/uploads/2020/03/Not%C3%ADcia-Falsa-%C3%A9-crime.jpeg"   alt="">
+                                                </div>
+                                                <div class="NTitulo">Exemplo de uma notícia</div>
+                                                <div class="Ninfo"> 500 comentarios. </p> Publicado há 5 dias atrás.</div>
+                                        </div>
+
+                                        <div class="NItem">
+                                                <div class="Nimg">
+                                                    <img src="https://salto.sp.gov.br/wp-content/uploads/2020/03/Not%C3%ADcia-Falsa-%C3%A9-crime.jpeg" alt="">
+                                                </div>
+                                                <div class="NTitulo">Exemplo de uma notícia</div>
+                                                <div class="Ninfo"> 500 comentarios. </p> Publicado há 5 dias atrás.</div>
+                                        </div>
+
+
+                                        <div class="NItem">
+                                            <div class="Nimg">
+                                                <img src="https://salto.sp.gov.br/wp-content/uploads/2020/03/Not%C3%ADcia-Falsa-%C3%A9-crime.jpeg"  alt="">
+                                            </div>
+                                            <div class="NTitulo">Exemplo de uma notícia</div>
+                                            <div class="Ninfo"> 500 comentarios. </p> Publicado há 5 dias atrás.</div>
+                                       </div>
+
+                                    </div>
+
+                                    <div class="clear"></div> <!--comando usado para prencher o espaço em branco das div-->
+                                </div>
+                                
+                            </div>
+                            <div class="Cont_widget">
+                                <div class="Cont_widget_titulo">ESPORTES</div>
+                                   <div class="Cont_widget_Conteudo">
+                                    <div class="NItem NBig">
+                                        <div class="Nimg">
+                                            <img src="https://salto.sp.gov.br/wp-content/uploads/2020/03/Not%C3%ADcia-Falsa-%C3%A9-crime.jpeg" alt="">
+                                        </div>
+                                        <div class="NTitulo">Exemplo de uma notícia</div>
+                                        <div class="Ninfo"> 500 comentarios. Publicado há 5 dias atrás.
+
+                                            <div class="conteudoEsporte">
+                                                
+                                               <ul> Atlético-MG x Cruzeiro opõe Hulk e Edu, artilheiros em 2021 e candidatos ao posto no Mineiro.
+                                                    <li class="levaDireita">Atlético-MG defende série invicta de 16 jogos com Hulk </li>
+                                                    <li class="levaDireita">Cruzeiro encara rival com mais de 80% de novatos em clássicos </li>
+                                               </ul>
+                                               <p>   No  <a class="site_noticia" href="https://ge.globo.com"> 
+                                                    ge.globo </a>  
+                                                    você encontra a melhor cobertura sobre o Futebol e Outros
+                                                    Esportes, no Brasil e no Mundo: Notícias, Vídeos, Tabelas,
+                                                    Agenda e muito mais. 
+                                                </p>
+                                                <div class="clear"></div>
+                                            </div>
+                                        </div>
+                                       
+                                  
+                                    </div>
+                                 
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            
+                    </div>
+            
+                 
+
+                    <div class="containerInternoDireito">
+                        <div class="Cont_widget">
+                            <div class="Cont_widget_titulo">Redes Sociais</div>
+                            <div class="Cont_widget_Conteudo">
+                                <a href=""> <img src="assets/images/youtube.png" border="0" height="26" width="26px"></a>
+                                <a href=""> <img src="assets/images/twitter.png" border="0" height="26" width="26px"></a>
+                                <a href=""> <img src="assets/images/facebook.png" border="0" height="26" width="26px"></a>
+                                <a href=""> <img src="assets/images/googleplus.png" border="0" height="26" width="26px"></a>
+                                <a href=""> <img src="assets/images/rss.png" border="0" height="26" width="26px"></a>
+                            </div>
+                        </div>
+
+                        <div class="Cont_widget">
+                            <div class="Cont_widget_titulo">Ultimas Noticias</div>
+                            <div class="Cont_widget_Conteudo">
+                            <h1>Rússia muda tom sobre reconhecimento de presidente da Ucrânia </h1> 
+                                    <div  class=" noticia_Esquerda">
+                                        O ministro das Relações Exteriores da Rússia,
+                                        Sergei Lavrov, disse hoje que o governo russo 
+                                        reconheceu o presidente Volodymyr Zelensky como
+                                        presidente da Ucrânia, em uma sinalização de
+                                        mudança no posicionamento do país frente à 
+                                        crise.... 
+                                        Veja a noticia completa no site:
+                                        <a class="site_noticia" href="https://noticias.uol.com.br/internacional/ultimas-noticias/2022/03/02/russia-reconhece-presidente-ucrania.htm?cmpid=copiaecola"> noticias.uol.com.br</a>  <span> </br>
+                                    </div>
+                                    <h1>Presidente da Ucrânia diz esperar notícias positivas sobre adesão à UE </h1> 
+                                    <div  class=" noticia_Esquerda">
+                                        O presidente da Ucrânia, Volodymyr Zelenskiy, disse 
+                                        hoje que aguarda notícias positivas sobre a proposta
+                                        de Kiev para aderir à União Europeia após telefonema
+                                        com o presidente do Conselho Europeu, Charles Michel...
+                                        Veja mais em:
+                                        <a class="site_noticia" href="https://noticias.uol.com.br/internacional/ultimas-noticias/2022/03/02/presidente-da-ucrania-diz-esperar-noticias-positivas-sobre-adesao-a-ue.htm?cmpid=copiaecola"> noticias.uol.com.br</a>  <span> </br>
+                                    </div>
+                                    <h1>Rússia muda tom sobre reconhecimento de presidente da Ucrânia </h1> 
+                                    <div  class=" noticia_Esquerda">
+                                        O ministro das Relações Exteriores da Rússia,
+                                        Sergei Lavrov, disse hoje que o governo russo 
+                                        reconheceu o presidente Volodymyr Zelensky como
+                                        presidente da Ucrânia, em uma sinalização de
+                                        mudança no posicionamento do país frente à 
+                                        crise.... 
+                                        Veja a noticia completa no site:
+                                        <a class="site_noticia" href="https://noticias.uol.com.br/internacional/ultimas-noticias/2022/03/02/russia-reconhece-presidente-ucrania.htm?cmpid=copiaecola"> noticias.uol.com.br</a>  <span> 
+                                    </div>
+                            </div>
+                        </div>
+        
+                <div class="Cont_widget">
+                    <div class="Cont_widget_titulo">Publicidade</div>
+                    <div class="Cont_widget_Conteudo">
+                     <img border="1" src="https://s24534.pcdn.co/carreira-sucesso/wp-content/uploads/sites/3/2020/12/carreira-publicidade-e-propaganda-1200x628-1.jpg" alt="" width="250" height="150">
+                    </div>
+                </div>
+
+                <div class="Cont_widget">
+                    <div class="Cont_widget_titulo">Encotre-nos no facebook
+                    </div>
+                    <div class="Cont_widget_Conteudo">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=270&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" height="300px">
+                        </iframe>
+                    </div>
+                </div>
+           </div>  
+        </div>   
+    
+        
+    </div>
+    <footer class="rodape">Todos os direitos reservados</footer>
+</body>
+</html>

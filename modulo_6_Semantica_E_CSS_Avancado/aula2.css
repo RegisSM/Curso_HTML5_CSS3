@@ -1,0 +1,41 @@
+body,.vai{
+ margin: 0 auto;
+ width: calc(100% - 80px);  
+ text-align: justify;
+ background-color: #CCC;
+ font-size: 20px;
+}
+
+a{ color: blue;  text-decoration: dotted; /*Tira o sublinhado do link*/}
+nav,footer {
+    height: 50px;
+    background: rgb(109, 109, 109);
+    color: blue;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: rgb(107, 106, 106);
+    border-radius: 10px;
+ 
+}
+span{
+    padding: 5px;
+    background-color: wheat;
+    margin-left:  80px;
+    
+    color: white;
+    border-radius: 5px;
+}
+span:hover a{
+    text-decoration: dashed;
+    color: rgb(223, 94, 94);
+}
+h1{
+    margin: 0 auto;
+    text-align: center;
+}
+footer{
+    position: relative;
+    bottom: 0; /*joga para baixo*/
+ 
+}

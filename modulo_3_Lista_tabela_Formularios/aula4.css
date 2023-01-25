@@ -1,0 +1,23 @@
+*{ box-sizing: border-box;}
+
+body{
+    font-size: 30px;
+    margin: 50px;
+    text-align: left;
+}
+h1{font-family: 'Sedgwick Ave', cursive;}
+
+ul{
+   
+    list-style-type: square;
+}
+li{ font-family: 'Neonderthaw', cursive;}
+p{
+    color: black;
+    font-size: 25px; /*tamanho da fonte*/
+    font-family: 'Neonderthaw', cursive; /*tipo de fonte*/
+    text-align: justify; /*alinhamento*/
+
+}
+
+

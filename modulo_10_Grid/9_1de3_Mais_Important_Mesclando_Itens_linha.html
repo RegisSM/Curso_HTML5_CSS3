@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container e Item</title>
+    <style>
+        /*auto-fill = ele cria colunas vazias para se adaptar ao elemento criado do grid.
+        auto-fit = ele cria colunas de acordo com o tamanho do elemento criado do grid , e fica
+        bem mais interessante na responsividade do site.*/
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            background-color: #ccc;
+            align-content: center; 
+        }
+        .Item{
+            border-radius: 10px;
+            background-color:blue;
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        .Item1{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            /*Começa na coluna 1 e vai estendendo ate a 4*/
+        }
+        .Item3{
+            grid-column-start: 2;
+            grid-column-end: 4; /*Faz com que ocupe duas coluna */
+
+            /*Para mexer na linha, primeiro é necessario setar a coluna, 
+            senão, sera alocado para outra posição*/
+            grid-row-start: 2;
+            grid-row-end: 5; /*caso queira que ocupe tres linhas basta colocar 5*/
+        }
+        .Item8{
+            grid-column-start: 3;
+            grid-column-end: 4;
+
+            grid-row-start:5;
+            grid-row-end:7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Item Item1">1</div>
+        <div class="Item Item2">2</div>
+        <div class="Item Item3">3</div>
+        <div class="Item Item4">4</div>
+        <div class="Item Item5">5</div>
+        <div class="Item Item6">6</div>
+        <div class="Item Item7">7</div>
+        <div class="Item Item8">8</div>
+        <div class="Item Item9">9</div>
+        <div class="Item Item10">10</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aula16.css"/>
+    <title>Página</title>
+</head>
+<body>
+    <div class="form-cente">
+        <form action="" method="POST" class="form" enctype="multipart/form-data">
+            <input type="hidden" name="country" value="MG"/> <!--informação que é oculta do usuario, e serve como registro de dados-->
+            <fieldset>
+                <legend>Dados Pessoais:</legend>
+                <label> Nome: <br/>
+                    <input type="text" name="name" required minlength="3" maxlength="10"/>
+                </label> <br/>
+            
+                <label> Sobrenome: <br/>
+                    <input type="text" name="lastname"  required minlength="3" maxlength="10"/>
+                </label><br/>
+
+                <label> Idade: <br/>
+                    <input type="number" name="lastname"  required min="18" max="100"/>
+                </label><br/>
+
+                <label> Email: <br/>
+                    <input type="text" name="email"  pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" title="Endereço de email"/>
+                </label><br/>
+                <label> Data de Nascimento: <br/>
+                    <input type="date" required name="birthdate"  min="2022-02-27"/>
+                </label><br/>
+
+                <label> Foto: <br/>
+                    <input type="file" name="photo" accept="image/*" required/>
+                </label><br/>
+            </fieldset>
+            
+            <fieldset class="vamos">
+                <legend>Dados Profissionais</legend>
+                <div class="label">  <label> Nome da empresa: <br/> </div>
+                    <input type="text" name="companyname"  required minlength="3" maxlength="10"/>
+                </label><br/>
+                
+                <label> Cargo na empresa: <br/>
+                    <input type="text" name="companyjobtitle"  required minlength="3" maxlength="10"/>
+                </label><br/>
+            </fieldset>
+           <div id="botao">  <input type="submit" class="enviar" value="Cadastrar"/> <br/> </div> 
+          
+        </form>
+    </div>
+</body>
+</html>

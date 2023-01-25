@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container e Item</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            /* grid-template-columns: 100px 200px 100px 100px; /*Define quantas colunas tera o grid*/
+            grid-template-columns: auto 200px auto;
+            grid-template-rows: auto 200px 300px  auto;
+            gap: 10px;
+        }
+        .Item{
+            border-radius: 10px;
+            background-color:blue;
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Item">1</div>
+        <div class="Item">2</div>
+        <div class="Item">3</div>
+        <div class="Item">4</div>
+        <div class="Item">5</div>
+        <div class="Item">6</div>
+        <div class="Item">7</div>
+        <div class="Item">8</div>
+        <div class="Item">9</div>
+        <div class="Item">10</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circulo Animado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="anel">.</div>
+     <svg>
+        <filter id="wave">
+            <feTurbulence x="-80" y="-80" baseFrequency="0.02" 
+               numOctaves="5"  seed="5">
+                <animate attributename="baseFrequency"
+                 dur="100" values="0.04; 0.08; 0.05;  0.05; 0.04; 0.08"
+                 repeatCount="indefinite" / >
+                 </animate>
+            </feTurbulence>
+            <feDisplacementMap in="SourceGraphic" scale="30"  scale="50"   scale="30" scale="50"  scale="30" / >
+            </feDisplacementMap>
+        </filter>
+     </svg>
+
+</body>
+</html>

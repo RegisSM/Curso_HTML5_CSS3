@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM</title>
+    <style>
+
+        /*Bloco do elemento*/
+        .Button{
+            border: 1px solid #cccc;
+            background-color: #333333;
+            padding: 10px;
+            font-size: 25px;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*Modifiers*/
+        .Button--big{
+            padding: 15px;
+        }
+        .Button--green{
+            background-color: green;
+        }
+        .Button--blue{
+            background-color: blue;
+        }
+        .title{
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .title--underline{
+            text-decoration: underline;
+
+        }
+
+        /*Bloco*/
+        .Lista{
+            border: 1px solid #333333;
+            list-style: none;
+            display: flex;
+        }
+        /*Elemento de um bloco*/
+            .Lista__Item{
+                padding: 10px;
+            }
+        
+        /*Modifiers para um bloco*/
+            .Lista--green{
+                background-color: red;
+                color: white;
+            }   
+
+        /*Modifiers para um elemento espeficio*/
+            .Lista__Item--bold{
+                font-weight: bold;
+            }
+
+    </style>
+</head>
+<body>
+        <button class="Button">Botão 1</button>
+        <button class="Button Button--big">Botão 2</button>
+        <button class="Button Button--green">Botão 3</button>
+        <a href="" class="Button Button--blue"> Botão 4</a>
+
+        <h1 class="title"> Titulo 1</h1>
+        <div class="title title--underline">Titulo 2</div>
+
+        <ul class="Lista Lista--green">
+            <li class="Lista__Item">Farinha</li>
+            <li class="Lista__Item Lista__Item--bold">Ovo</li>
+            <li class="Lista__Item">Fermento</li>
+        </ul>
+</body>
+</html>

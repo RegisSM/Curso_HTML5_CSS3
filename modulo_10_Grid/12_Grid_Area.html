@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container e Item</title>
+    <style>
+        /*auto-fill = ele cria colunas vazias para se adaptar ao elemento criado do grid.
+        auto-fit = ele cria colunas de acordo com o tamanho do elemento criado do grid , e fica
+        bem mais interessante na responsividade do site.*/
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            background-color: #ccc;
+            align-content: center; 
+        }
+        .Item{
+            border-radius: 10px;
+            background-color:blue;
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        .Item1{
+            /* O grid-area funciona em quatro etapas sendo elas:
+            1. grid-row-start
+            2. grid-column-start
+            3. grid-row-end
+            4. gred-column-end*/
+            grid-area: 1 / 1 / span 3 /  span 2 ;
+        }
+        .Item6{
+            grid-area: 4 / 2 / 6 / 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Item Item1">1</div>
+        <div class="Item Item2">2</div>
+        <div class="Item Item3">3</div>
+        <div class="Item Item4">4</div>
+        <div class="Item Item5">5</div>
+        <div class="Item Item6">6</div>
+        <div class="Item Item7">7</div>
+        <div class="Item Item8">8</div>
+        <div class="Item Item9">9</div>
+        <div class="Item Item10">10</div>
+        <div class="Item Item11">11</div>
+    </div>
+</body>
+</html>

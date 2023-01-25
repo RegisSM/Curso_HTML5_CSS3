@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container e Item</title>
+    <style>
+        /*auto-fill = ele cria colunas vazias para se adaptar ao elemento criado do grid.
+        auto-fit = ele cria colunas de acordo com o tamanho do elemento criado do grid , e fica
+        bem mais interessante na responsividade do site.*/
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+       
+        }
+        .container{
+            display: grid;
+            gap: 10px;
+            background-color: #ccc;
+            align-content: center; 
+          
+            grid-template-rows: 70px calc(100vh - 220px) 60px;
+            grid-template-areas:
+            "header header header header header header header header"
+            "menu menu content content content content content content"
+            "ad ad content content content content content content"
+            "footer footer footer footer footer footer footer footer";
+
+
+                
+        }
+        .Item{
+            border-radius: 10px;
+            background-color:blue;
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .Container-menu--itens{
+            display: grid;
+            background-color: #ccc;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+           
+        }
+        h1, .ad{
+            text-align: center;
+       
+            grid-column: 1 / span 3;
+        
+        }
+    
+        header{grid-area: header;}
+        nav{grid-area:menu;}
+        section{grid-area: content;}
+        footer{grid-area: footer;}
+        .ad{grid-area: ad;}
+
+        @media (min-width:750px) and (max-width:1024px){
+
+           
+            .Container-menu--itens{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            h1{
+                grid-column: 1 / span 2;
+            }
+            
+        }
+        @media( max-width:750px){
+            .container{
+                
+                grid-template-areas:
+                    "header header header menu"
+                    "content content content ."
+                    "footer footer footer ad"
+                ;
+            }
+            .Container-menu--itens{
+                grid-template-columns: 1fr;
+            }
+            h1{
+                grid-column: 1 / span 1;
+            }
+        }
+        
+        @media( max-width:550px){
+            .container{
+                grid-template-areas:
+                    "header header"
+                    "menu menu"
+                    " content content"
+                    "ad ad"
+                    "footer footer"
+                ;
+                grid-template-rows: initial;
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="Item">Cabeçalho</header>
+        <nav class="Item Container-menu--itens">
+            <h1>Menu</h1> 
+            <div class="Item Item1">1</div>
+            <div class="Item Item2">2</div>
+            <div class="Item Item3">3</div>
+            <div class="Item Item4">4</div>
+            <div class="Item Item5">5</div>
+            <div class="Item Item6">6</div>
+            <div class="Item Item7">7</div>
+            <div class="Item Item8">8</div>
+        </nav>
+        <section class="Item">Conteúdo: </br>
+            Colocando mais conteúdo, para que o conteudo fique maior
+        </br>
+            Colocando mais conteúdo, para que o conteudo fique maior
+        </br>
+        Colocando mais conteúdo, para que o conteudo fique maior
+        </br>
+        Colocando mais conteúdo, para que o conteudo fique maior
+        </br>
+        Colocando mais conteúdo, para que o conteudo fique maior
+        </br>
+        Colocando mais conteúdo, para que o conteudo fique maior
+        </section>
+        <footer class="Item">Rodapé</footer>
+        <div class="Item ad">Anúncio</div>
+       
+    </div>
+</body>
+</html>

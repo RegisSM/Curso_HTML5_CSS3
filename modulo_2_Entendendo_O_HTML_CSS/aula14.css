@@ -1,0 +1,8 @@
+* {   /* o * aplica os efeito em todoa tela ok? */   /**/
+  box-sizing: border-box;  
+}
+
+body{
+    margin: 50px;
+    font-size:25px;
+}

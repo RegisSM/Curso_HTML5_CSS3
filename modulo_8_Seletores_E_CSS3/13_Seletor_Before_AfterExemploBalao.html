@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+        }
+        .Balao1{
+            margin-right: 50px;
+            background-color: blue;
+            display: inline-block;
+            padding: 20px;
+            color: white;
+            border-radius: 20px;
+        }
+        .Balao1::after{
+            content:'';   
+            display: block;
+            position: absolute;     
+            margin-top: 20px;
+            border: 10px solid; /*Expecifica o tamanho do triangulo*/
+            border-color: blue transparent transparent transparent;
+        }
+        .Balao1{
+            background-color: blue;
+            display: inline-block;
+            padding: 20px;
+            color: white;
+            border-radius: 20px;
+        }
+        .Balao1::after{
+            content:'';   
+            display: block;
+            position: absolute;     
+            margin-top: 20px;
+            border: 10px solid; /*Expecifica o tamanho do triangulo*/
+            border-color: blue transparent transparent transparent;
+        }
+
+        .Balao2{
+            background-color: blue;
+            display: inline-block;
+            padding: 20px;
+            color: white;
+            border-radius: 15px;
+        }
+        .Balao2::after{
+            content:'';   
+            display: inline-block; /*Coloca na mesma linha*/
+            position: absolute;   /* por esta absolut ela esta fluando dentro da linha*/  
+            margin-left:19px;
+            top: 35px;
+            border: 15px solid; /*Expecifica o tamanho do triangulo*/
+            border-color: transparent transparent transparent blue;
+        }
+
+    </style>
+</head>
+<body>
+
+        <div class="Balao1">Olá, tudo bem?</div>
+            <p></p>
+        <div class="Balao2">Olá, tudo bem?</div>
+</body>
+</html>

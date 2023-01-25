@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  /*  div{
+        width:50%;
+        height: 200px;
+        background-color: #FF0000;
+        margin: 10px;
+        float:left;  /*faz uma coluna virar em linha 
+    } */
+    .container{
+        display: flex;
+        height: 500px;
+        flex-direction: row;
+        justify-content: center ;
+        align-items: center;
+        background-color: #DDDDDDDD;
+        margin: 10px;
+        flex-wrap: wrap;
+        flex-basis:100% ;
+        align-content: center; /* usando para varios conteudo, e serve para ajusta todos os itens
+                                  no centro para não peder a formatação*/
+
+        align-content: space-between;/*a primeira linha vai para topo e a segundo linha vai para baixo*/
+    }
+    .container div{
+        width: 100px;  
+        height: 100px;
+        background-color: #FF0000;
+        margin: 10px;
+        padding: 10px;
+        font-size: 18px;
+        /* por padrão, todos os item vem setado com ordem 0 */
+    }
+  /*.div10{
+      align-self: flex-end; /* faz o elemento sair da formataçao, e seguir a que vc programar
+      order: -1;  fara que a div10 aparece primeiro
+  }*/
+  .div14{
+     
+      order: -2; /* fara que a div10 aparece primeiro*/
+  }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        <div class="div5">5</div>
+        <div class="div6">6</div>
+        <div class="div7">7</div>
+        <div class="div8">8</div>
+        <div class="div9">9</div>
+        <div class="div10">10</div>
+        <div class="div11">11</div>
+        <div class="div12">12</div>
+        <div class="div13">13</div>
+        <div class="div14">14</div>
+        <div class="div15">15</div>
+    </div>
+
+
+</body>
+</html>

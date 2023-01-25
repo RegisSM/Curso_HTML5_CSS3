@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container e Item</title>
+    <style>
+        /*auto-fill = ele cria colunas vazias para se adaptar ao elemento criado do grid.
+        auto-fit = ele cria colunas de acordo com o tamanho do elemento criado do grid , e fica
+        bem mais interessante na responsividade do site.*/
+        .container{
+            display: grid;
+            /*grid-template-columns: 50px repeat(2, 100px) 200px;
+            /*grid-template-columns: 100px repeat(2, 100px); */
+            
+            /*grid-template-columns: repeat(2, 100px) repeat(3, 200px);
+
+            /*grid-template-columns: repeat(2, 100px 200px 50px);
+            /* repeat(2, 100px 200px 50px) = grid-template-columns:100px 200px 50px 100px 50px; */
+
+
+            /*grid-template-columns: repeat(3, 1fr);
+            /*fazer repeat(3, 100px); = fazer grid-template-columns:100px 100px 100px; */
+            /*grid-template-columns: repeat(4, auto); Adapta com uma lagura automatica*/
+            width: 700px;     
+            margin: auto;
+            
+            grid-template-columns: repeat(auto-fill, 300px); /*Repeita ate de chega ao tamanho maximo 
+            da resolução da tela. Caso sobrar um espaço, significa que a não coube e por cosequencia 
+            é deixado um espaço vazio, pois é quebrado em linha*/
+            gap: 10px;
+        }
+        .Item{
+            border-radius: 10px;
+            background-color:blue;
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Item">1</div>
+        <div class="Item">2</div>
+        <div class="Item">3</div>
+        <div class="Item">4</div>
+        <div class="Item">5</div>
+        <div class="Item">6</div>
+        <div class="Item">7</div>
+        <div class="Item">8</div>
+        <div class="Item">9</div>
+        <div class="Item">10</div>
+    </div>
+</body>
+</html>

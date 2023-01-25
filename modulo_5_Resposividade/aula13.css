@@ -1,0 +1,6 @@
+img{
+    /*width: max(50%,300px); ela vai diminuir o tamanho ate chegar num valor de
+     50% de largura. Apos bater ela passa a definir 300px sendo o nova dimenção*/
+    width: min(50%,300px);  /* 50%=>615= 307*/
+
+}

@@ -1,0 +1,27 @@
+*{
+   box-sizing: border-box;
+}
+
+body{
+    font-size: 30px;
+    margin: 50px;
+    text-align: center;
+}
+
+p{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+   
+}
+
+
+a{
+    text-decoration: none; /*sem sublinhado*/
+}
+
+a:hover{
+    text-decoration: underline; /*aparece o sublinhado apenas quando passa o mouse*/
+}

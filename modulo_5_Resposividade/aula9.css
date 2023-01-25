@@ -1,0 +1,17 @@
+@media(aspect-ratio:1/1){
+    body{
+        background-color: #f00;
+    }
+}
+
+@media(min-aspect-ratio:2/1){
+    body{
+        background-color: rgb(20, 197, 100);
+    }
+}
+
+@media(max-aspect-ratio:1/2){    /* 1/2=> 1 equivale a largura e 2 equivale a altura*/
+    body{
+        background-color: rgb(197, 20, 153);
+    }
+}

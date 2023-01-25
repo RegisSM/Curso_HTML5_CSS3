@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline-block vs float</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .inline-block > *,
+      .float > * {
+        width: 50px;
+        height: 50px;
+        background: #0af;
+      }
+
+      .inline-block > * {
+        display: inline-block;
+      }
+
+      .float > *:not(:last-child) {
+        float: left;
+      }
+
+      .float :last-child {
+        clear: both;
+        width: 0;
+        height: 0;
+      }
+
+      .mt-2 {
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Inline-block</h1>
+      <div class="inline-block">
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+
+    <section class="mt-2">
+      <h1>Float</h1>
+      <div class="float">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+    <pre>
+      inline-block só faz os elementos ocuparem o mesmo espaço que as dimensões deles
+      (ex: se tem width: 50px, ele vai ocupar só 50px de width, quando é block, ele
+      ocupa 100% da width, independente da width do elemento, tipo como se ele aluga-se
+      todas as cadeiras de uma fileira de um cinema, mas só senta-se em uma), e o float
+      faz eles ocuparem só o mesmo espaço que as dimensões deles só que é como se
+      tive-se uma corrente d'água empurrando os elementos para direção que você 
+      especificou o float, assim eles vão flutuando e se agrupando para aquele lado, 
+      outra característica do float é que ele tira os elementos do fluxo do documento,
+      então o calculo de altura deles é feito separado, tipo como se eles tivessem um
+      position e é por isso que você precisa ficar limpando ele depois.
+      EU recomendo usar o inline-block só quando você quiser que um elemento 
+      seja inline (já que o display inline é muito ingessado de trabalhar), o 
+      float você usa quando quiser usar a propriedade shape-outside, qualquer 
+      outra coisa ele já ficou ultrapassado, tem vários "problemas" quando você usa
+      (já que tem que ficar limpando), e já foi muito superado por especificações que
+      realmente foram criadas para layoutar: flexbox e css grid.
+    </pre>
+    </section>
+  </body>
+</html>

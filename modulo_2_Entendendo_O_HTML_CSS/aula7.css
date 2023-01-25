@@ -1,0 +1,34 @@
+/*.a7{
+    background-color: #ff0000; /*#f00; #f00; #f0f; ... */
+   /* ff= sigfinca o maximo da cor da letra
+      2 = red = letra
+      2 = verde = nume
+      2 = azul nume   }*/
+.a7{
+    background-color: #0000ff;
+    font-size: 35;
+    color: rgb(225,225,225);
+    border-radius: 10px;
+}
+p{ border:5px solid #00f}
+
+/*p{ border-bottom:5px groove #00f}
+
+p{ border-top:5px groove #00f}
+
+p{ border-left:5px groove #00f}
+
+p{ border-right:5px groove #00f}*/
+
+div{
+    background-color:green;
+    width:  200px; /*largura*/    /**/
+    height: 200px; /*altura*/
+    border-radius: 100px; /*valor maximo que o raio pode atingir*/
+    border: 3px solid black;
+}
+img{
+    border:10px solid red;
+    border-radius: 50px;
+    overflow:hidden;
+}

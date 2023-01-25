@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Noticias</title>
+     <link rel="stylesheet" href="C:\Users\Regis\Desktop\B7Web\MODULO_HTML_CSS\Projetos\Criando_Portal\assets\css\style.css">
+    <style>
+        *{
+    margin: 0; padding: 0;
+}
+body{
+    margin: 0;
+    font-family: arial;
+    font-size: 12px;
+    background-color: #ccc;
+}
+/*****Div do Menu Preto*****/
+.barraPreta{
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+}
+/*********MenuEsquerdo*********/
+.barraInterior{
+    width: 100%;
+    max-width: 1050px;
+    height: 40px;
+    margin: auto;
+}
+.barraEsquerda{
+    height: 40px;
+    width: 50%;
+    float: left;
+    color: white;
+    line-height: 40px;
+}
+.barraEsquerda ul{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+}
+.barraEsquerda li{
+    float: left;
+    height: 40px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.barraEsquerda li a{
+    text-decoration: none;
+    color: white;
+}
+.barraEsquerda li:hover  a{
+    display: block;    
+    color:rgb(38, 137, 235);
+}   
+.barraEsquerda li .ativo{
+    text-decoration: none;
+    color:blue;
+}
+/*********MenuDireito*********/
+.barraDireita{
+    width: 50%;
+    height: 17px;
+    float: right;
+    color: white; 
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+.barraDireita  a{
+    float: right;
+}
+.barraDireita input{
+    float: right;
+}
+.barraDireita input .lupinha{
+background-color: red;
+height: 20px;
+width: 20px; 
+
+}
+.barraDireita img{
+    margin-left: 5px;
+}
+.BarraBusca{
+    margin-left: 5px;
+ outline: 0;
+ width: 110px;
+ height: 26px;
+ padding: 0; /* deixa padrao em todos navegador*/
+ border: 0;
+}
+/*********Topo*********/
+.topo{
+    height: 95px;
+    color: white;
+    font-size: 24px;
+}
+.topoInferior{
+    width: 100%;
+    max-width: 1050px;
+    height: 95px;
+    margin: auto;
+}
+.topologo{ 
+    float: left;
+    width: 30%;
+    line-height:95px;
+    color: red;
+    height: 95px;
+    font-size: 35px;
+    font-family:Luminari, fantasy;
+}
+.topoInferior .topobaner{ 
+    float: right;
+    width: 70%;
+    height: 80px;
+    line-height:80px;
+    color: white;
+    text-align: center;
+    background-color: red;
+    margin-top: 7.5px; /*95-80/2=7.5*/
+}
+
+/*********MenuPrincipal*********/
+.div_De_Fora{
+    width: 100%;
+    height: 40px;
+    background-color: red;
+}
+.MenuPrincipal{
+    width: 100%;
+    max-width: 1050px;
+    margin: auto;
+    height: 40px;
+   
+}
+.MenuPrincipal ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.MenuPrincipal li{
+    height: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+    line-height: 40px;
+    float: left;
+}
+
+
+.MenuPrincipal li, a{  
+    color:#FFF;
+    text-decoration: none;
+    display: inline-block;
+}
+.MenuPrincipal li:hover{  
+    background-color:#FF6666;
+    text-decoration: none;
+    display: block;
+}
+.submenu{
+    display: none;
+    width: 109px;
+    position: absolute;
+    background-color: red;
+    margin-left: -8px; /*Resolve o problema do sub menu sendo deslocado*/
+
+}
+.MenuPrincipal li:hover .submenu  {
+    display: block;  
+}
+.submenuItem{
+    width: 95px;
+    padding-left: 7px;
+    padding-right: 7px;
+    line-height: 40px;
+}
+
+.submenuItem:hover{
+    background-color: #FF6666;
+    
+}
+/********UltimasNoticias********/
+
+.NExterno{
+    width: 100%;
+    height: 50px;
+}
+.Nespaco_Interno{
+    margin: auto;
+    height: 50px;
+    width: 100%;
+    max-width: 1050px;
+   
+
+}
+.EspacoDeUltimasNoticia{
+    height: 30px;
+    background-color: #FFF;
+    border: 1px solid#ccc;
+    margin-top: 15px;
+}
+.UltimasNoticiasEsquerda{
+    display: inline-block;
+    height: 30px;
+    background-color: red;
+    color: white;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+.UltimasNoticiaDireita{
+    height: 30px;   
+    display: inline-block;
+    line-height: 30px;
+    color: black;
+    padding-left: 5px;
+    
+    margin: 0;
+}
+/********Container********/
+.containerInterno{
+    width: 100%;
+    max-width: 1050px;
+    height: 800px;
+    background-color: #333;
+    margin: auto;
+}
+.Cont_interiorEsquerdo{
+    width: 763px;/*1050-275-12=763*/
+    height: 300px;
+    float: left;
+    background-color: red;
+
+}
+.containerInternoDireito{
+    width: 275px;
+    float: right;
+    min-height: 200px;
+    margin-left: 12px;
+    background-color: #FF6666;
+}
+.Cont_widget{
+    background-color:#FFF;
+    border: 1px solid #CCC;
+}
+
+    </style>
+    </head>
+<body>
+     <div class="barraPreta">
+           <div class="barraInterior">
+               <div class="barraEsquerda">
+                   <ul>
+                      <li> <a class="ativo" href=""> Home </a></li>
+                      <li><a href="">Quem somos</a></li>
+                      <li><a  href="">Anuncie Aqui</a></li>
+                      <li><a  href="">Contato</a></li>
+                   </ul>
+               </div>
+                <div class="barraDireita"> 
+                    <input type="image" class="lupinha" src="assets/images/lupa.png" name="imagem" width="26" height="26"/>
+                    <input type="text" class="BarraBusca" name="busca" placeholder="Busca..."/>
+   
+                    <a href=""> <img src="assets/images/youtube.png" border="0" height="26" width="26px"></a>
+                    <a href=""> <img src="assets/images/twitter.png" border="0" height="26" width="26px"></a>
+                    <a href=""> <img src="assets/images/facebook.png" border="0" height="26" width="26px"></a>
+                    <a href=""> <img src="assets/images/googleplus.png" border="0" height="26" width="26px"></a>
+                    <a href=""> <img src="assets/images/rss.png" border="0" height="26" width="26px"></a>
+                    
+                </div>
+ 
+            </div>
+     </div>
+     
+     <div class="topo">
+          <div class="topoInferior">
+              <div class="topologo">  Portal Mega Zero</div>
+              <div class="topobaner"> Publicidade 728x90px </div>
+          </div>
+     </div>
+
+     <div class="div_De_Fora">
+            <nav class="MenuPrincipal">
+                <ul>
+                    <li> <a href=""> Home</a></li>
+                    <li><a href="">Economia</a></li>
+                    <li><a href="">Entreterimento</a>
+                        <img src="assets/images/arrowdown.jpg" border="0" width="10"/>
+                        <div class="submenu">
+                            <a href=""> <div class="submenuItem">
+                                Submenu 1
+                            </div> </a>  
+                            <a href=""> <div class="submenuItem">
+                                Submenu 2
+                            </div> </a>  
+                            <a href=""> <div class="submenuItem">
+                                Submenu 3
+                            </div> </a>  
+                            <a href=""> <div class="submenuItem">
+                                Submenu 4
+                            </div> </a>  
+                            <a href=""> <div class="submenuItem">
+                                Submenu 5
+                            </div> </a> 
+                        </div>
+                    </li>
+                    <li><a href="">Esportes</a>
+                        <img src="assets/images/arrowdown.jpg" border="0" width="10"/>
+                        <div class="submenu">
+                            <a href=""> <div class="submenuItem">
+                                Submenu 1
+                            </div> </a>  
+                            <a href=""> <div class="submenuItem">
+                                Submenu 2
+                            </div> </a>  
+                            <a href=""> <div class="submenuItem">
+                                Submenu 3
+                            </div> </a>  
+                        </div>
+                    </li>
+                    <li><a href="">Geral</a></li>
+                    <li><a href="">Notícias</a>
+                        <img src="assets/images/arrowdown.jpg" border="0" width="10"/>
+                        <div class="submenu">
+                            <a href=""> <div class="submenuItem">
+                                Submenu 1
+                            </div> </a>  
+                            <a href=""> <div class="submenuItem">
+                                Submenu 2
+                            </div> </a>  
+                            <a href=""> <div class="submenuItem">
+                                Submenu 3
+                            </div> </a>  
+                            <a href=""> <div class="submenuItem">
+                                Submenu 4
+                            </div> </a>  
+                        </div>
+                    </li>
+                    <li><a href="">Polícia</a></li>
+                    <li><a href="">Videos</a></li>
+                </ul>
+            </nav>
+     </div>
+     <div class="NExterno">
+        <div class="Nespaco_Interno">
+            <div class="EspacoDeUltimasNoticia">
+                <div class="UltimasNoticiasEsquerda"> Últimas Notícias</div>
+                <div class="UltimasNoticiaDireita"> Criador da internet teme a perda de tdoas as nossas memórias digitalis no futuro</div>
+            </div>
+        </div>
+     </div>
+    <div class="containerExerno">
+        <div class="containerInterno">
+            <div class="containerInternoEsquerdo">
+                <div class="Cont_interiorDireito"></div>
+            </div>
+            
+            <div class="containerInternoDireito">
+                <div class="Cont_interiorDireito"></div>
+            </div>
+        </div>     
+    </div>
+</body>
+</html>
